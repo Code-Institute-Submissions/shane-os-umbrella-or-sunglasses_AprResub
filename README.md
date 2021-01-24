@@ -2,12 +2,12 @@
 
 ## Contents
 ### UX (User Experience)
-Project Goals
-User Goals
-User Stories
-Site Owner Goals
-User Requirements
-User Expectations
+ * Project Goals
+ * User Goals
+ * User Stories
+ * Site Owner Goals
+ * User Requirements
+ * User Expectations
 ### Site Layout & Design:
   * Wireframes
   * Icons
