@@ -65,3 +65,10 @@
  * Javascript
  * JQuery
  
+#### Libraries & Tools:
+ * Git
+ * Github
+ * Gitpod
+ * Font Awesome
+ * Bootstrap
+ 
