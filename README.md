@@ -57,3 +57,11 @@
  * Information related to weather conditions is displayed in a visually appealing manner.
  * Data presented is clear and concise thus reducing potential for confusion.
  * Site internal and external links direct users to expected destination link.
+ 
+## Technologies:
+#### Programming Languages:
+ * HTML
+ * CSS
+ * Javascript
+ * JQuery
+ 
