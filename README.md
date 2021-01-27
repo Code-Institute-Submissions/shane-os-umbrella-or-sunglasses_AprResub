@@ -41,3 +41,8 @@
  * As a user, I would like to change the website display settings to suit my requirements.
  * As a user, I wish to contact the site administrator if I have an issue with the site.
  
+#### Site Owner Goals:
+ * As a site owner, I want to provide users with information on forecasted weather conditions in their chosen area.
+ * As a site owner, I wish to present weather related information in an interesting and engaging way.
+ * As a site owner, I would like to create options which allow users to change the various display aspects in front of them.
+ * As a site owner, I want to provide a method through which users can easily and efficiently contact me.
