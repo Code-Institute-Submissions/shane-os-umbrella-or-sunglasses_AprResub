@@ -49,6 +49,11 @@
 
 #### User Requirements:
  * Area search function operates correctly and promptly.
- * Weather information is displayed quickly and in a coherent manner.
+ * Up to date and accurate weather condition information is provided.
  * Site is easy to navigate.
  * Contact form validates user imputed information and sends information to administrator.
+
+#### User Expectations:
+ * Information related to weather conditions is displayed in a visually appealing manner.
+ * Data presented is clear and concise thus reducing potential for confusion.
+ * Site internal and external links direct users to expected destination link.
