@@ -46,3 +46,9 @@
  * As a site owner, I wish to present weather related information in an interesting and engaging way.
  * As a site owner, I would like to create options which allow users to change the various display aspects in front of them.
  * As a site owner, I want to provide a method through which users can easily and efficiently contact me.
+
+#### User Requirements:
+ * Area search function operates correctly and promptly.
+ * Weather information is displayed quickly and in a coherent manner.
+ * Site is easy to navigate.
+ * Contact form validates user imputed information and sends information to administrator.
