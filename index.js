@@ -8,6 +8,6 @@ fetch(website)
             let data = weather.results;
             console.log(data);
         });
-        .catch(function(){
-
+        .catch(function(error){
+            console.log(error);
         });
