@@ -7,6 +7,7 @@ fetch(website)
         .then(function(weather){
             let data = weather.results;
             console.log(data);
+            return data;
         });
         .catch(function(error){
             console.log(error);
