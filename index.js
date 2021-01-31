@@ -8,9 +8,7 @@ function displayData(){
 
 function getData(){
     fetch(website)
-    if (this.readyState == 4 && this.status == 200){
         .then(response => response.json())
-    };
     .then(function(weather){
         let data = weather.results;
         console.log(data);
