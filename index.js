@@ -8,7 +8,7 @@ function displayData(){
 
 function getData(){
     fetch(website)
-        .then(response => response.json())
+    .then(response => response.json())
     .then(function(weather){
         let data = weather.results;
         console.log(data);
