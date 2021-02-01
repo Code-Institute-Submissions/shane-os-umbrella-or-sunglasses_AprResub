@@ -57,7 +57,17 @@
  * Information related to weather conditions is displayed in a visually appealing manner.
  * Data presented is clear and concise thus reducing potential for confusion.
  * Site internal and external links direct users to expected destination link.
- 
+
+## Site Layout and Design
+
+#### Colour Scheme:
+For the aesthetics of the website, I decided to utilise colours associated with weather conditions.
+ * #133C55 - Indigo Dye will be used for the header( incl. navigation bar) and footer, representing storms.
+ * #91E5F6 - Sky Blue Crayola, conveying clear skies is planned for card titles.
+ * #F1F6F8 - Alice Blue will be represent clouds and will be used for some container backgrounds.
+ * #fcfbe4 - Snow White to imitate snow and winter will be utilised for the main background and some text.
+ * #2C2B2C - Pitch Black will be used for the majority of text shown on the website.
+
 ## Technologies:
 #### Programming Languages:
  * HTML
