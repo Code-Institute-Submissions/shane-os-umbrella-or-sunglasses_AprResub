@@ -14,3 +14,13 @@ footer {
     text-align: center;
     background-color: #133C55;
 }
+
+footer a {
+    color: #fcfbe4;
+    text-decoration: none;
+}
+
+footer p {
+    color: #fcfbe4;
+    text-decoration: none;
+}
