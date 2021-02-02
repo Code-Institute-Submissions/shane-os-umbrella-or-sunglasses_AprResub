@@ -19,4 +19,4 @@ function getData(){
     });
 }
 
-displayData();
+getdata();
