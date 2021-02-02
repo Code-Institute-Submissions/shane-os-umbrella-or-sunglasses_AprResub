@@ -1,4 +1,4 @@
-let website = "api.openweathermap.org/data/2.5/forecast?q=London&appid=998966fabbbdab57f239ac694a7f1675";
+let website = 'https://api.openweathermap.org/data/2.5/weather?q=London&appid=998966fabbbdab57f239ac694a7f1675';
 
 function displayData(){
     let conditions = displayData();
