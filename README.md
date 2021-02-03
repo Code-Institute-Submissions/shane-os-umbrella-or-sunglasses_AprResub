@@ -61,6 +61,9 @@
 ## Site Layout and Design
 
 #### Colour Scheme:
+
+![Colour Pallete] (umbrella-or-sunglasses/Assets/Images/umbrella_or_sunglasses_colours.png)
+
 For the aesthetics of the website, I decided to utilise colours associated with weather conditions.
  * #133C55 - Indigo Dye will be used for the header( incl. navigation bar) and footer, representing storms.
  * #91E5F6 - Sky Blue Crayola, conveying clear skies is planned for card titles.
