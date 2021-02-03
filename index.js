@@ -5,6 +5,7 @@ function displayData(data) {
     document.getElementById('countryname').innerHTML = data.sys.country;
     document.getElementById('citydescription').innerHTML = data.weather[0].description;
     document.getElementById('citywind').innerHTML = data.wind.speed;
+    document.getElementById('citytemp').innerHTML = data.main.temp;
 }
 
 function getData() {
