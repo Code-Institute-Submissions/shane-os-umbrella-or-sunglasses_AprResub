@@ -2,6 +2,7 @@ let website = 'https://api.openweathermap.org/data/2.5/weather?q=London&appid=99
 
 function displayData(data) {
     document.getElementById('citydescription').innerHTML = data.weather[0].description;
+    document.getElementById('citywind').innerHTML = data.wind.speed;
 }
 
 function getData() {
