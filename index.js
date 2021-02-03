@@ -6,7 +6,7 @@ function displayData(data) {
     document.getElementById('citydescription').innerHTML = data.weather[0].description;
     document.getElementById('citywind').innerHTML = data.wind.speed;
     temperature = parseFloat(data.main.temp) -273.15;
-    document.getElementById('citytemp').innerHTML = temperature;
+    document.getElementById('citytemp').innerHTML = temperature.toFixed(2)+" Degrees Celcius";
 }
 
 function getData() {
