@@ -9,11 +9,10 @@ function displayData(){
 function getData(){
     fetch(website)
     .then(response => response.json())
-    .then(function(weather){
-        let data = weather.results;
-        console.log(data);
-        return data;
-    });
+    .then(function(weatherdata){
+        console.log(weatherdata);
+        displayData(weatherdata);
+    })
     .catch(function(error){
         console.log(error);
     });
