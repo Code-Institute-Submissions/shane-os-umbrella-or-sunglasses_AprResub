@@ -1,12 +1,10 @@
 let website = 'https://api.openweathermap.org/data/2.5/weather?q=London&appid=998966fabbbdab57f239ac694a7f1675';
 
-function displayData(){
-    let conditions = displayData();
-    let weatherdata = document.querySelector('.weatherdata');
-    weatherdata.innerHTML = conditions;
+function displayData(data) {
+    document.getElementById('citydescription').innerHTML = data.weather[0].description;
 }
 
-function getData(){
+function getData() {
     fetch(website)
     .then(response => response.json())
     .then(function(weatherdata){
@@ -18,4 +16,4 @@ function getData(){
     });
 }
 
-getdata();
+getData();
