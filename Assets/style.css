@@ -10,7 +10,14 @@
     padding-right: 2%;
 }
 
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+}
+
 h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
     text-align: center;
 }
 
