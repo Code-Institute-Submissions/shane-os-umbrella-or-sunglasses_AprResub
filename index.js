@@ -1,4 +1,14 @@
-let website = 'https://api.openweathermap.org/data/2.5/weather?q=London&appid=998966fabbbdab57f239ac694a7f1675';
+const website = 'https://api.openweathermap.org/data/2.5/weather?q='
+const appid = '998966fabbbdab57f239ac694a7f1675'
+
+
+search.addEventListener("click", function(){
+    let city = document.getElementById('searchweather').value;
+    citydata = website+city+'&appid='+appid;
+    getData(citydata);
+})
+
+
 
 function displayData(data) {
     document.getElementById('cityname').innerHTML = data.name;
@@ -11,7 +21,7 @@ function displayData(data) {
 }
 
 function getData() {
-    fetch(website)
+    fetch(citydata)
     .then(response => response.json())
     .then(function(weatherdata){
         console.log(weatherdata);
