@@ -14,6 +14,11 @@
   * Images
   * Colour Scheme
 ### Technologies
+  * Programming Languages
+  * Libraries & Tools
+### Open Weather Map API:
+  * Fetch 
+  * Current Weather
 ### Features
   * Developed
   * Future Implementation
