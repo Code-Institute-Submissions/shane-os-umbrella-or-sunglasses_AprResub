@@ -21,6 +21,12 @@ h1 {
     text-align: center;
 }
 
+.jumbotron {
+    width: 80%;
+    text-align: center;
+    background-color: #F1F6F8;
+    padding: 5%;
+}
 .card {
     text-align: center;
 }
