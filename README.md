@@ -93,3 +93,13 @@ For the aesthetics of the website, I decided to utilise colours associated with 
 ## Open Weather Map API:
 To display accurate weather information on the webpage when a user enters their chosen city into the search box, the site must make use of an API (Application Programming Interface). Open Weather Map was chosen as the API to be used for the project due to the detailed weather information it provides, reliability and high number of API calls allowed within a given timeframe (Up to 1,000,000 API calls per month at the free tier). This would allow the Umbrella or Sunglasses website to function optimally when accessed by potential users.
 
+
+## Deployment:
+The Umbrella or Sunglasses website is stored as a repository on the Github site. The website was created using the Gitpod Integrated Development Environment. Utilising the Github Pages feature, the Umbrella or Sunglasses website was deployed. The process for deploying the site on Github pages was as follows:
+
+1. Login to Github website with the necessary username and password.
+2. Select settings option at the top of the navigation menu on the shane-os/umbrella-or-sunglasses Github repository page.
+3. Go to the Github pages section.
+4. Select the Master branch and confirm.
+
+Result: The page is now live at: https://shane-os.github.io/umbrella-or-sunglasses/.
