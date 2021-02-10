@@ -18,7 +18,7 @@ function displayData(data) {
     windspeedhour = parseFloat(data.wind.speed)*((60*60)/1000);
     document.getElementById('citywind').innerHTML = windspeedhour.toFixed(2)+"Km/hr";
     temperature = parseFloat(data.main.temp) -273.15;
-    document.getElementById('citytemp').innerHTML = temperature.toFixed(2)+" Degrees Celcius";
+    document.getElementById('citytemp').innerHTML = temperature.toFixed(2)+" °C";
 }
 
 function getData() {
