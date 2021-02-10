@@ -15,7 +15,8 @@ function displayData(data) {
     document.getElementById('countryname').innerHTML = data.sys.country;
     document.getElementById('citydescription').innerHTML = data.weather[0].description;
     document.getElementById('weatherconditionsicon').innerHTML = "<img src="+"http://openweathermap.org/img/wn/"+data.weather[0].icon+".png>";
-    document.getElementById('citywind').innerHTML = data.wind.speed;
+    windspeedhour = parseFloat(data.wind.speed)*((60*60)/1000);
+    document.getElementById('citywind').innerHTML = windspeedhour.toFixed(2)+"Km/hr";
     temperature = parseFloat(data.main.temp) -273.15;
     document.getElementById('citytemp').innerHTML = temperature.toFixed(2)+" Degrees Celcius";
 }
