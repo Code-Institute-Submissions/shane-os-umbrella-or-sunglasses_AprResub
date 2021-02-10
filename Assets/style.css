@@ -31,10 +31,12 @@ h1 {
 
 .card {
     text-align: center;
+    border-radius: 15px;
 }
 
 .card-header {
     background-color: #91E5F6;
+    border-radius: 15px;
 }
 
 footer {
