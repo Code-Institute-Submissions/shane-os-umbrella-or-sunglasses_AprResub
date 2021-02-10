@@ -13,6 +13,8 @@ search.addEventListener("click", function(){
 function displayData(data) {
     document.getElementById('cityname').innerHTML = data.name;
     document.getElementById('countryname').innerHTML = data.sys.country;
+    datetime = Date(data.dt);
+    document.getElementById('countryname').innerHTML = datetime;
     document.getElementById('citydescription').innerHTML = data.weather[0].description;
     document.getElementById('weatherconditionsicon').innerHTML = "<img src="+"http://openweathermap.org/img/wn/"+data.weather[0].icon+".png>";
     windspeedhour = parseFloat(data.wind.speed)*((60*60)/1000);
