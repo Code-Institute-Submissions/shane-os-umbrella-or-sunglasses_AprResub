@@ -34,5 +34,3 @@ function getData() {
         console.log(error);
     });
 }
-
-getData();
