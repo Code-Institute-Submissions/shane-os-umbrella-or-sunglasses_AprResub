@@ -23,6 +23,10 @@ function displayData(data) {
     document.getElementById('citytemp').innerHTML = temperature.toFixed(2)+" °C";
 }
 
+function invalidLocation() {
+    alert("Location Name Invalid!");
+}
+
 function getData() {
     fetch(citydata)
     .then(response => response.json())
@@ -32,5 +36,6 @@ function getData() {
     })
     .catch(function(error){
         console.log(error);
+        invalidLocation()
     });
 }
