@@ -1,6 +1,6 @@
 const website = 'https://api.openweathermap.org/data/2.5/weather?q='
 const appid = '998966fabbbdab57f239ac694a7f1675'
-
+const tempconv = -273.15;
 
 search.addEventListener("click", function(){
     let city = document.getElementById('searchweather').value;
@@ -19,8 +19,14 @@ function displayData(data) {
     document.getElementById('weatherconditionsicon').innerHTML = "<img src="+"http://openweathermap.org/img/wn/"+data.weather[0].icon+".png>";
     windspeedhour = parseFloat(data.wind.speed)*((60*60)/1000);
     document.getElementById('citywind').innerHTML = windspeedhour.toFixed(2)+"Km/hr";
-    temperature = parseFloat(data.main.temp) -273.15;
-    document.getElementById('citytemp').innerHTML = temperature.toFixed(2)+" °C";
+    kelvintemp = parseFloat(data.main.temp);
+    displaytemperature = tempCalculation(kelvintemp);
+    document.getElementById('citytemp').innerHTML = displaytemperature.toFixed(2)+" °C";
+}
+
+function tempCalculation(temp){
+    celcius = temp + tempconv;
+    return celcius;
 }
 
 function invalidLocation() {
