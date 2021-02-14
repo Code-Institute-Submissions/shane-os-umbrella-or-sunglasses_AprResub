@@ -25,7 +25,9 @@ function displayData(data) {
 }
 
 function tempCalculation(temp){
+    kelvin = temp
     celcius = temp + tempconv;
+    fahrenheit = (temp + tempconv) * 9/5 + 32;
     return celcius;
 }
 
