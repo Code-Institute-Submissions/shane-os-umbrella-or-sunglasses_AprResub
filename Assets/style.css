@@ -37,6 +37,7 @@ h1 {
 
 searchweather {
     background-color: #ffffff;
+    align-items: center;
 }
 
 .card {
