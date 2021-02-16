@@ -35,6 +35,10 @@ h1 {
     margin-right: auto;
 }
 
+searchweather {
+    background-color: #ffffff;
+}
+
 .card {
     text-align: center;
     border-radius: 15px;
