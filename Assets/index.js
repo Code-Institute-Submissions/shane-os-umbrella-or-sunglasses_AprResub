@@ -27,7 +27,7 @@ function displayData(data) {
     kelvintemp = parseFloat(data.main.temp);
     displaytemperature = tempCalculation(kelvintemp);
     document.getElementById('citytemp').innerHTML = displaytemperature.toFixed(2)+" °C";
-    weatherIconsDisplay(displaytemperature);
+    weatherIconsDisplay(displaytemperature, windspeedhour);
 }
 
 function tempCalculation(temp){
@@ -40,7 +40,7 @@ function tempCalculation(temp){
 function invalidLocation() {
     alert("Location Name Invalid!");
 }
-function weatherIconsDisplay(temperature) {
+function weatherIconsDisplay(temperature, windspeed) {
     if (temperature < lowtemperature) {
         document.getElementById('temperatureicon').innerHTML = '<i class="fas fa-temperature-low"></i>'
     }
@@ -49,6 +49,10 @@ function weatherIconsDisplay(temperature) {
     }
     else {
         document.getElementById('temperatureicon').innerHTML = '<i class="fas fa-thermometer-half"></i>'
+    };
+    
+    if (windspeed > strongwinds) {
+        document.getElementById('windspeedicon').innerHTML = '<i class="fas fa-wind"></i>'
     }
 }
 
