@@ -1,10 +1,10 @@
-const website = 'https://api.openweathermap.org/data/2.5/weather?q='
-const appid = '998966fabbbdab57f239ac694a7f1675'
+const website = 'https://api.openweathermap.org/data/2.5/weather?q=';
+const appid = '998966fabbbdab57f239ac694a7f1675';
 const tempconv = -273.15;
 
 // Weather Guidance 
 const lowtemperature = 5;
-const hightemperature;
+const hightemperature = 20;
 const strongwinds = 20;
 
 search.addEventListener("click", function(){
