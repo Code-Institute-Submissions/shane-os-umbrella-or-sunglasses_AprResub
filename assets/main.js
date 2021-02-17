@@ -60,6 +60,9 @@ function weatherIconsDisplay(temperature, windspeed, clothes) {
 
     if (200 <= weatherid < 600) {
         document.getElementById('attireicon').innerHTML = '<i class="fas fa-umbrella"></i>'
+    }
+    else if (600 <= weatherid < 700) {
+        document.getElementById('attireicon').innerHTML = '<i class="fas fa-mitten"></i>'
     };
 }
 
