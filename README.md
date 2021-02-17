@@ -101,6 +101,11 @@ To display accurate weather information on the webpage when a user enters their 
  * Weather Display using Open Weather Map API
  * Weather Guidance Icons
 
+#### Future Development:
+ * Multiple location display
+ * Weather maps
+ * Multiple days weather forecast
+
 ## Deployment:
 The Umbrella or Sunglasses website is stored as a repository on the Github site. The website was created using the Gitpod Integrated Development Environment. Utilising the Github Pages feature, the Umbrella or Sunglasses website was deployed. The process for deploying the site on Github pages was as follows:
 
