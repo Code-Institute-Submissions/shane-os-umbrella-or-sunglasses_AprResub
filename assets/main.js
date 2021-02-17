@@ -28,7 +28,8 @@ function displayData(data) {
     displaytemperature = tempCalculation(kelvintemp);
     document.getElementById('citytemp').innerHTML = displaytemperature.toFixed(2)+" °C";
     feelsliketemp = parseFloat(data.main.feels_like);
-    document.getElementById('temperaturefeels').innerHTML = feelsliketemp.toFixed(2)+" °C";
+    feelsliketempdisplay = tempCalculation(feelsliketemp)
+    document.getElementById('temperaturefeels').innerHTML = feelsliketempdisplay.toFixed(2)+" °C";
     weatherid = data.weather[0].id;
     weatherIconsDisplay(displaytemperature, windspeedhour, weatherid);
 }
