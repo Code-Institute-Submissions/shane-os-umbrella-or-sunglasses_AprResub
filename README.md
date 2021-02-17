@@ -67,7 +67,7 @@
 
 #### Colour Scheme:
 
-![Colour Palette](https://github.com/shane-os/umbrella-or-sunglasses/blob/master/Assets/Images/umbrella_or_sunglasses_colours.png)
+![Colour Palette](https://github.com/shane-os/umbrella-or-sunglasses/blob/master/assets/images/umbrella_or_sunglasses_colours.png)
 
 For the aesthetics of the website, I decided to utilise colours associated with weather conditions.
  * #133C55 - Indigo Dye will be used for the header( incl. navigation bar) and footer, representing storms.
