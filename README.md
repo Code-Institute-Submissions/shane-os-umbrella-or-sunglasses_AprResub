@@ -115,3 +115,12 @@ The Umbrella or Sunglasses website is stored as a repository on the Github site.
 4. Select the Master branch and confirm.
 
 Result: The page is now live at: https://shane-os.github.io/umbrella-or-sunglasses/.
+
+Alternatively, the Umbrella or Sunglasses project can be run locally:
+
+1. Go to the Github repository for the Umbrella or Sunglasses.
+2. Click on the Clone button with the Download icon and select the "HTTPS" option.
+3. Copy the link shown.
+4. Open your Integrated Development Environment (IDE) and open the Git Terminal if not already opened.
+5. Using the change working directory command ($ cd filepath) enter the location where the cloned directory will be stored.
+6. Finally, use the "$ git clone" command and paste the repository link from earlier.
