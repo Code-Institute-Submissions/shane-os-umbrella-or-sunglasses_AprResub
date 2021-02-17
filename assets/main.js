@@ -10,6 +10,11 @@ const lowtemperature = 5;
 const hightemperature = 20;
 const strongwinds = 20;
 
+const citynameRef = document.querySelector('#cityname');
+const countrynameRef = document.querySelector('#countryname');
+const citydescriptionRef = document.querySelector('#citydescription');
+const weatherconditionsiconRef = document.querySelector('#weatherconditionsicon');
+
 // Location Search Bar Listener
 search.addEventListener("click", function(){
     let city = document.getElementById('searchweather').value;
@@ -19,12 +24,12 @@ search.addEventListener("click", function(){
 
 // Conversion of JSON Records to HTML
 function displayData(data) {
-    document.getElementById('cityname').innerHTML = data.name;
-    document.getElementById('countryname').innerHTML = data.sys.country;
+    citynameRef.innerHTML = data.name;
+    countrynameRef.innerHTML = data.sys.country;
     datetime = Date(data.dt);
     document.getElementById('countryname').innerHTML = datetime;
-    document.getElementById('citydescription').innerHTML = data.weather[0].description;
-    document.getElementById('weatherconditionsicon').innerHTML = "<img src="+"http://openweathermap.org/img/wn/"+data.weather[0].icon+".png>";
+    citydescriptionRef.innerHTML = data.weather[0].description;
+    weatherconditionsiconRef.innerHTML = "<img src="+"http://openweathermap.org/img/wn/"+data.weather[0].icon+".png>";
     windspeedhour = parseFloat(data.wind.speed)*((60*60)/1000);
     document.getElementById('citywind').innerHTML = windspeedhour.toFixed(2)+"Km/hr";
     kelvintemp = parseFloat(data.main.temp);
