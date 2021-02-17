@@ -29,7 +29,8 @@ function displayData(data) {
     document.getElementById('citytemp').innerHTML = displaytemperature.toFixed(2)+" °C";
     feelsliketemp = parseFloat(data.main.feels_like);
     document.getElementById('temperaturefeels').innerHTML = feelsliketemp.toFixed(2)+" °C";
-    weatherIconsDisplay(displaytemperature, windspeedhour);
+    weatherid = data.weather[0].id;
+    weatherIconsDisplay(displaytemperature, windspeedhour, weatherid);
 }
 
 function tempCalculation(temp){
@@ -42,7 +43,7 @@ function tempCalculation(temp){
 function invalidLocation() {
     alert("Location Name Invalid!");
 }
-function weatherIconsDisplay(temperature, windspeed) {
+function weatherIconsDisplay(temperature, windspeed, clothes) {
     if (temperature < lowtemperature) {
         document.getElementById('temperatureicon').innerHTML = '<i class="fas fa-temperature-low"></i>'
     }
@@ -55,7 +56,11 @@ function weatherIconsDisplay(temperature, windspeed) {
 
     if (windspeed > strongwinds) {
         document.getElementById('windspeedicon').innerHTML = '<i class="fas fa-wind"></i>'
-    }
+    };
+
+    if (200 <= weatherid < 600) {
+        document.getElementById('attireicon').innerHTML = '<i class="fas fa-umbrella"></i>'
+    };
 }
 
 function getData() {
