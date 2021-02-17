@@ -1,5 +1,8 @@
+//  Open Weather Map URL
 const website = 'https://api.openweathermap.org/data/2.5/weather?q=';
 const appid = '998966fabbbdab57f239ac694a7f1675';
+
+// Temperature Conversion Value
 const tempconv = -273.15;
 
 // Weather Guidance 
@@ -7,14 +10,14 @@ const lowtemperature = 5;
 const hightemperature = 20;
 const strongwinds = 20;
 
+// Location Search Bar Listener
 search.addEventListener("click", function(){
     let city = document.getElementById('searchweather').value;
     citydata = website+city+'&appid='+appid;
     getData(citydata);
 })
 
-
-
+// Conversion of JSON Records to HTML
 function displayData(data) {
     document.getElementById('cityname').innerHTML = data.name;
     document.getElementById('countryname').innerHTML = data.sys.country;
@@ -34,6 +37,7 @@ function displayData(data) {
     weatherIconsDisplay(displaytemperature, windspeedhour, weatherid);
 }
 
+// Temperature Standard Conversion
 function tempCalculation(temp){
     kelvin = temp;
     celcius = temp + tempconv;
@@ -41,9 +45,12 @@ function tempCalculation(temp){
     return celcius;
 }
 
+// Invalid Location Entry Alert
 function invalidLocation() {
     alert("Location Name Invalid!");
 }
+
+// Weather Icons Display
 function weatherIconsDisplay(temperature, windspeed, clothes) {
     if (temperature < lowtemperature) {
         document.getElementById('temperatureicon').innerHTML = '<i class="fas fa-temperature-low fa-3x"></i>'
@@ -70,6 +77,7 @@ function weatherIconsDisplay(temperature, windspeed, clothes) {
     };
 }
 
+// Retrieve Data from Open Weather API
 function getData() {
     fetch(citydata)
     .then(response => response.json())
