@@ -14,6 +14,7 @@ const citynameRef = document.querySelector('#cityname');
 const countrynameRef = document.querySelector('#countryname');
 const citydescriptionRef = document.querySelector('#citydescription');
 const weatherconditionsiconRef = document.querySelector('#weatherconditionsicon');
+const temperatureiconRef = document.querySelector('#temperatureicon');
 
 // Location Search Bar Listener
 search.addEventListener("click", function(){
@@ -58,13 +59,13 @@ function invalidLocation() {
 // Weather Icons Display
 function weatherIconsDisplay(temperature, windspeed, weatherid) {
     if (temperature < lowtemperature) {
-        document.getElementById('temperatureicon').innerHTML = '<i class="fas fa-temperature-low fa-3x"></i>'
+        temperatureiconRef.innerHTML = '<i class="fas fa-temperature-low fa-3x"></i>'
     }
     else if (temperature > hightemperature) {
-        document.getElementById('temperatureicon').innerHTML = '<i class="fas fa-temperature-high fa-3x"></i>'
+        temperatureiconRef.innerHTML = '<i class="fas fa-temperature-high fa-3x"></i>'
     }
     else {
-        document.getElementById('temperatureicon').innerHTML = '<i class="fas fa-thermometer-half fa-3x"></i>'
+        temperatureiconRef.innerHTML = '<i class="fas fa-thermometer-half fa-3x"></i>'
     };
 
     if (windspeed > strongwinds) {
