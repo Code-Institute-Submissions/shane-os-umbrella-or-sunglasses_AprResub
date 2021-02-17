@@ -63,6 +63,9 @@ function weatherIconsDisplay(temperature, windspeed, clothes) {
     }
     else if (600 <= weatherid < 700) {
         document.getElementById('attireicon').innerHTML = '<i class="fas fa-mitten"></i>'
+    }
+    else if (weatherid == 800) {
+        document.getElementById('attireicon').innerHTML = '<i class="fas fa-glasses"></i>'
     };
 }
 
