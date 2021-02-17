@@ -51,7 +51,7 @@ function invalidLocation() {
 }
 
 // Weather Icons Display
-function weatherIconsDisplay(temperature, windspeed, clothes) {
+function weatherIconsDisplay(temperature, windspeed, weatherid) {
     if (temperature < lowtemperature) {
         document.getElementById('temperatureicon').innerHTML = '<i class="fas fa-temperature-low fa-3x"></i>'
     }
