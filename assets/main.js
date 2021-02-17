@@ -45,27 +45,27 @@ function invalidLocation() {
 }
 function weatherIconsDisplay(temperature, windspeed, clothes) {
     if (temperature < lowtemperature) {
-        document.getElementById('temperatureicon').innerHTML = '<i class="fas fa-temperature-low"></i>'
+        document.getElementById('temperatureicon').innerHTML = '<i class="fas fa-temperature-low fa-3x"></i>'
     }
     else if (temperature > hightemperature) {
-        document.getElementById('temperatureicon').innerHTML = '<i class="fas fa-temperature-high"></i>'
+        document.getElementById('temperatureicon').innerHTML = '<i class="fas fa-temperature-high fa-3x"></i>'
     }
     else {
-        document.getElementById('temperatureicon').innerHTML = '<i class="fas fa-thermometer-half"></i>'
+        document.getElementById('temperatureicon').innerHTML = '<i class="fas fa-thermometer-half fa-3x"></i>'
     };
 
     if (windspeed > strongwinds) {
-        document.getElementById('windspeedicon').innerHTML = '<i class="fas fa-wind"></i>'
+        document.getElementById('windspeedicon').innerHTML = '<i class="fas fa-wind fa-3x"></i>'
     };
 
     if (200 <= weatherid < 600) {
-        document.getElementById('attireicon').innerHTML = '<i class="fas fa-umbrella"></i>'
+        document.getElementById('attireicon').innerHTML = '<i class="fas fa-umbrella fa-3x"></i>'
     }
     else if (600 <= weatherid < 700) {
-        document.getElementById('attireicon').innerHTML = '<i class="fas fa-mitten"></i>'
+        document.getElementById('attireicon').innerHTML = '<i class="fas fa-mitten fa-3x"></i>'
     }
     else if (weatherid == 800) {
-        document.getElementById('attireicon').innerHTML = '<i class="fas fa-glasses"></i>'
+        document.getElementById('attireicon').innerHTML = '<i class="fas fa-glasses fa-3x"></i>'
     };
 }
 
