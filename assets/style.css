@@ -51,6 +51,13 @@ searchweather {
     align-items: center;
 }
 
+.searchbox {
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+}
+
 /* Card */
 
 .card {
