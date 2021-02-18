@@ -12,6 +12,7 @@ const strongwinds = 20;
 
 const citynameRef = document.querySelector('#cityname');
 const countrynameRef = document.querySelector('#countryname');
+const datetimeRef = document.querySelector('#datetime');
 const citydescriptionRef = document.querySelector('#citydescription');
 const citytempRef = document.querySelector('#citytemp');
 const citywindRef = document.querySelector('#citywind');
@@ -31,7 +32,7 @@ function displayData(data) {
     citynameRef.innerHTML = data.name;
     countrynameRef.innerHTML = data.sys.country;
     datetime = Date(data.dt);
-    document.getElementById('datetime').innerHTML = datetime;
+    datetimeRef.innerHTML = datetime;
     citydescriptionRef.innerHTML = data.weather[0].description;
     weatherconditionsiconRef.innerHTML = "<img src="+"http://openweathermap.org/img/wn/"+data.weather[0].icon+".png>";
     windspeedhour = parseFloat(data.wind.speed)*((60*60)/1000);
