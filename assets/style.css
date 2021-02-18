@@ -85,6 +85,16 @@ searchweather {
     margin-left: auto;
     margin-right: auto;
 }
+
+.guidanceicons span {
+    display: inline-block;
+    margin: 20px;
+    font: large;
+}
+
+.guidance p {
+    font-size: 40px;
+}
 /* Footer */
 
 footer {
