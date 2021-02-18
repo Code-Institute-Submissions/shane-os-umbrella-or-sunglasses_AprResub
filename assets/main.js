@@ -20,6 +20,7 @@ const temperatureiconRef = document.querySelector('#temperatureicon');
 search.addEventListener("click", function(){
     let city = document.getElementById('searchweather').value;
     getData(`${website}${city}&appid=${appid}`);
+    getData(citydata);
 })
 
 // Conversion of JSON Records to HTML
