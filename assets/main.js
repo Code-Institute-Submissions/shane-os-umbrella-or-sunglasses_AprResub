@@ -96,13 +96,13 @@ function weatherIconsDisplay(temperature, windspeed, weatherid) {
         document.getElementById('windspeedicon').innerHTML = '<i class="fas fa-wind fa-3x"></i>'
     };
 
-    if (200 <= weatherid < 600) {
+    if (199 < weatherid && weatherid < 600) {
         document.getElementById('attireicon').innerHTML = '<i class="fas fa-umbrella fa-3x"></i>'
     }
-    else if (600 <= weatherid < 700) {
+    else if (599 < weatherid && weatherid < 700) {
         document.getElementById('attireicon').innerHTML = '<i class="fas fa-mitten fa-3x"></i>'
     }
-    else if (weatherid == 800) {
+    else {
         document.getElementById('attireicon').innerHTML = '<i class="fas fa-glasses fa-3x"></i>'
     };
 }
