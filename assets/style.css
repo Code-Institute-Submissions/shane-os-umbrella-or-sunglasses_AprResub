@@ -74,8 +74,8 @@ searchweather {
 }
 
 .card-header {
-    background-color: #91E5F6;
-    border-radius: 15px;
+    font-size: 32px;
+    font-weight: 500;
 }
 
 .card-img {
