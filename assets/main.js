@@ -20,6 +20,7 @@ const weatherconditionsiconRef = document.querySelector('#weatherconditionsicon'
 const temperatureiconRef = document.querySelector('#temperatureicon');
 const temperaturefeelsRef = document.querySelector('#temperaturefeels');
 const mainbackgroundRef = document.querySelector('#weatherphoto');
+const weatherdisplayinfoRef = document.querySelector('#weatherdisplayinfo');
 
 // Location Search Bar Listener
 search.addEventListener("click", function(){
@@ -44,20 +45,21 @@ function displayData(data) {
     feelsliketemp = parseFloat(data.main.feels_like);
     feelsliketempdisplay = tempCalculation(feelsliketemp)
     temperaturefeelsRef.innerHTML = feelsliketempdisplay.toFixed(2)+" °C";
-    weatherid = data.weather[0].id;
+    weatherid = parseInt(data.weather[0].id);
+    weatherdisplayinfoRef.innerHTML = data.weather[0].id;
     weatherIconsDisplay(displaytemperature, windspeedhour, weatherid);
     backgroundPhoto(weatherid);
 }
 
 // Weather Image Shown
 function backgroundPhoto(weatherref) {
-    if (199 < weatherref < 300) {
+    if (199 < weatherref && weatherref < 300) {
         mainbackgroundRef.src = 'assets/images/lightning.jpg';
     }
-    else if (299 < weatherref < 600) {
+    else if (299 < weatherref && weatherref < 600) {
         mainbackgroundRef.src = 'assets/images/moderate-rain.jpg';
     }
-    else if (599 < weatherref < 700) {
+    else if (599 < weatherref && weatherref < 700) {
         mainbackgroundRef.src = 'assets/images/snow.jpg';
     }
     else {
