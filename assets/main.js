@@ -19,6 +19,7 @@ const citywindRef = document.querySelector('#citywind');
 const weatherconditionsiconRef = document.querySelector('#weatherconditionsicon');
 const temperatureiconRef = document.querySelector('#temperatureicon');
 const temperaturefeelsRef = document.querySelector('#temperaturefeels');
+const mainbackgroundRef = document.querySelector('#weatherphoto');
 
 // Location Search Bar Listener
 search.addEventListener("click", function(){
@@ -43,9 +44,23 @@ function displayData(data) {
     feelsliketemp = parseFloat(data.main.feels_like);
     feelsliketempdisplay = tempCalculation(feelsliketemp)
     temperaturefeelsRef.innerHTML = feelsliketempdisplay.toFixed(2)+" °C";
-    weatherid = data.weather[0].id;
+    weatherid = parseFloat(data.weather[0].id);
     weatherIconsDisplay(displaytemperature, windspeedhour, weatherid);
+    backgroundPhoto(weatherid);
 }
+
+// Weather Image Shown
+function backgroundPhoto(weatherref) {
+
+        mainbackgroundRef.src = 'assets/images/city.jpg';
+
+/*   else if (600 <= weatherid < 700) {
+       document.getElementById('attireicon').innerHTML = '<i class="fas fa-mitten fa-3x"></i>'
+    }
+    else if (weatherid === 800) {
+        document.getElementById('attireicon').innerHTML = '<i class="fas fa-glasses fa-3x"></i>'
+    }; */
+} 
 
 // Temperature Standard Conversion
 function tempCalculation(temp){
