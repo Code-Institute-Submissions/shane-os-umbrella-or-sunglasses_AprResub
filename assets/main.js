@@ -19,7 +19,7 @@ const temperatureiconRef = document.querySelector('#temperatureicon');
 // Location Search Bar Listener
 search.addEventListener("click", function(){
     let city = document.getElementById('searchweather').value;
-    getData(`${website}${city}&appid=${appid}`);
+    citydata = `${website}${city}&appid=${appid}`;
     getData(citydata);
 })
 
