@@ -44,22 +44,25 @@ function displayData(data) {
     feelsliketemp = parseFloat(data.main.feels_like);
     feelsliketempdisplay = tempCalculation(feelsliketemp)
     temperaturefeelsRef.innerHTML = feelsliketempdisplay.toFixed(2)+" °C";
-    weatherid = parseFloat(data.weather[0].id);
+    weatherid = data.weather[0].id;
     weatherIconsDisplay(displaytemperature, windspeedhour, weatherid);
     backgroundPhoto(weatherid);
 }
 
 // Weather Image Shown
 function backgroundPhoto(weatherref) {
-
-        mainbackgroundRef.src = 'assets/images/city.jpg';
-
-/*   else if (600 <= weatherid < 700) {
-       document.getElementById('attireicon').innerHTML = '<i class="fas fa-mitten fa-3x"></i>'
+    if (199 < weatherref < 300) {
+        mainbackgroundRef.src = 'assets/images/lightning.jpg';
     }
-    else if (weatherid === 800) {
-        document.getElementById('attireicon').innerHTML = '<i class="fas fa-glasses fa-3x"></i>'
-    }; */
+    else if (299 < weatherref < 600) {
+        mainbackgroundRef.src = 'assets/images/moderate-rain.jpg';
+    }
+    else if (599 < weatherref < 700) {
+        mainbackgroundRef.src = 'assets/images/snow.jpg';
+    }
+    else {
+        mainbackgroundRef.src = 'assets/images/city.jpg';
+    };
 } 
 
 // Temperature Standard Conversion
