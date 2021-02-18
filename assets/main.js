@@ -13,8 +13,11 @@ const strongwinds = 20;
 const citynameRef = document.querySelector('#cityname');
 const countrynameRef = document.querySelector('#countryname');
 const citydescriptionRef = document.querySelector('#citydescription');
+const citytempRef = document.querySelector('#citytemp');
+const citywindRef = document.querySelector('#citywind');
 const weatherconditionsiconRef = document.querySelector('#weatherconditionsicon');
 const temperatureiconRef = document.querySelector('#temperatureicon');
+const temperaturefeelsRef = document.querySelector('#temperaturefeels');
 
 // Location Search Bar Listener
 search.addEventListener("click", function(){
@@ -32,13 +35,13 @@ function displayData(data) {
     citydescriptionRef.innerHTML = data.weather[0].description;
     weatherconditionsiconRef.innerHTML = "<img src="+"http://openweathermap.org/img/wn/"+data.weather[0].icon+".png>";
     windspeedhour = parseFloat(data.wind.speed)*((60*60)/1000);
-    document.getElementById('citywind').innerHTML = windspeedhour.toFixed(2)+"Km/hr";
+    citywindRef.innerHTML = windspeedhour.toFixed(2)+"Km/hr";
     kelvintemp = parseFloat(data.main.temp);
     displaytemperature = tempCalculation(kelvintemp);
-    document.getElementById('citytemp').innerHTML = displaytemperature.toFixed(2)+" °C";
+    citytempRef.innerHTML = displaytemperature.toFixed(2)+" °C";
     feelsliketemp = parseFloat(data.main.feels_like);
     feelsliketempdisplay = tempCalculation(feelsliketemp)
-    document.getElementById('temperaturefeels').innerHTML = feelsliketempdisplay.toFixed(2)+" °C";
+    temperaturefeelsRef.innerHTML = feelsliketempdisplay.toFixed(2)+" °C";
     weatherid = data.weather[0].id;
     weatherIconsDisplay(displaytemperature, windspeedhour, weatherid);
 }
