@@ -58,6 +58,12 @@ searchweather {
     outline: none;
 }
 
+.searchicon {
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    border-radius: 7px;
+}
 /* Card */
 
 .card {
