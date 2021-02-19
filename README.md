@@ -188,3 +188,10 @@ Alternatively, the Umbrella or Sunglasses project can be run locally:
 * Images:
 The images used in the project came from the following sources (Links are provided below):
 1. [Sunset-Landscape](https://unsplash.com/photos/62t_kKa2YlA)
+2. [City](https://unsplash.com/photos/9CPAjGVB378)
+3. [Snow](https://pixabay.com/photos/snowfall-winter-snow-snowflakes-201496/)
+4. [Rain](https://pixabay.com/photos/rain-stoppers-water-window-pane-1461288/)
+5. [Lightning](https://pixabay.com/photos/lightning-thunder-lightning-storm-1056419/)
+6. [Earth-Map-Night](https://pixabay.com/photos/earth-world-map-continents-land-11595/)
+7. [Earth Night](https://pixabay.com/photos/earth-lights-environment-globe-1149733/)
+8. [Clouds Night](https://unsplash.com/s/photos/cloudy-night)
