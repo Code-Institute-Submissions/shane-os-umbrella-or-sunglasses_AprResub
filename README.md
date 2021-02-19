@@ -78,6 +78,8 @@ The completed wireframes are stored [here](https://github.com/shane-os/umbrella-
 
 The use of icons for this project is key to helping user's understand and appreciate the weather conditions in their area. The icons displayed will be differ depending on the weather conditions in their area. For example, if the wind speed is above 20km/hr a wind icon appears in the weather guidance section. Also, there are three thermometer icons, only one showing at a time depending on if the temperature is moderate, low or high.
 
+All icons used in this project were from the Font Awesome collection.
+
 
 
 #### Colour Scheme:
