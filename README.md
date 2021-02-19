@@ -1,5 +1,7 @@
 # Umbrella Or Sunglasses?
 
+![Sunset Landscape](https://github.com/shane-os/umbrella-or-sunglasses/blob/master/assets/images/sunset-landscape.jpg)
+
 ## Contents
 ### UX (User Experience)
  * Project Goals
