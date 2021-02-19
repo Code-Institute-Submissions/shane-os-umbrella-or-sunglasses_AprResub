@@ -99,20 +99,21 @@ For the aesthetics of the website, I decided to utilise colours associated with 
 
 ## Technologies:
 #### Programming Languages:
- * HTML
- * CSS
- * Javascript
- * JQuery
+ * [HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+ * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+ * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+ * [JQuery](https://jquery.com/)
  
 #### Libraries & Tools:
- * Git
- * Github
- * Gitpod
- * Font Awesome
- * Bootstrap
+ * [Git](https://git-scm.com/)
+ * [Github](https://github.com/)
+ * [Gitpod](https://www.gitpod.io/)
+ * [Font Awesome](https://fontawesome.com/)
+ * [Bootstrap](https://getbootstrap.com/)
+ * [Google Fonts](https://fonts.google.com/)
 
 ## Open Weather Map API:
-To display accurate weather information on the webpage when a user enters their chosen city into the search box, the site must make use of an API (Application Programming Interface). Open Weather Map was chosen as the API to be used for the project due to the detailed weather information it provides, reliability and high number of API calls allowed within a given timeframe (Up to 1,000,000 API calls per month at the free tier). This would allow the Umbrella or Sunglasses website to function optimally when accessed by potential users.
+To display accurate weather information on the webpage when a user enters their chosen city into the search box, the site must make use of an API (Application Programming Interface). Open Weather Map was chosen as the API to be used for the project due to the detailed weather information it provides, reliability and high number of API calls allowed within a given timeframe (Up to 1,000,000 API calls per month at the free tier). This would allow the Umbrella or Sunglasses website to function optimally when accessed by potential users. The website can be accessed [here](https://openweathermap.org/)
 
 ## Features:
 
