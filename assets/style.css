@@ -71,13 +71,17 @@ searchweather {
     border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
-    height: 250px;
     overflow: hidden;
+    outline: none;
+    border: none;
 }
 
 .card-header {
     font-size: 32px;
     font-weight: 500;
+    background: none;
+    border: none;
+    outline: none;
 }
 
 .card-img {
@@ -86,7 +90,8 @@ searchweather {
     object-fit: cover;
     margin-left: auto;
     margin-right: auto;
-    height: 250px;
+    display: flex;
+    padding-bottom: 20px;
 }
 
 .guidanceicons span {
@@ -118,11 +123,12 @@ footer p {
 /* Media Queries */
 
 @media only screen and (max-width: 600px) {
-    .card {width: 90%;}
-    .card-img {width: 90%;};
+    .card {width: 100%;}
+    .card-img {width: 100%;}
+
 }
 
 @media only screen and (min-width: 600px) {
-    .card {width: 100%;}
-    .card-img {width: 100%;};
+    .card {width: 90%;}
+    .card-img {width: 90%;};
 }
