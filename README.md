@@ -46,10 +46,9 @@
  * As a user, I would like to know if I need to take precautions based on the weather conditions forecasted. (e.g. umbrella, gloves, sunglasses)
  
 #### Site Owner Goals:
- * As a site owner, I want to provide users with information on forecasted weather conditions in their chosen area.
+ * As a site owner, I want to provide users with information on weather conditions in their chosen area.
  * As a site owner, I wish to present weather related information in an interesting and engaging way.
- * As a site owner, I would like to create options which allow users to change the various display aspects in front of them.
- * As a site owner, I want to provide a method through which users can easily and efficiently contact me.
+ * As a site owner, I would like to create an easy to navigate site to allow them to quickly and accurately obtain the information.
 
 #### User Requirements:
  * Area search function operates correctly and promptly.
