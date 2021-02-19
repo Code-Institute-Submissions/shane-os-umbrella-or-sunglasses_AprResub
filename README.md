@@ -149,3 +149,15 @@ Alternatively, the Umbrella or Sunglasses project can be run locally:
 4. Open your Integrated Development Environment (IDE) and open the Git Terminal if not already opened.
 5. Using the change working directory command ($ cd filepath) enter the location where the cloned directory will be stored.
 6. Finally, use the "$ git clone" command and paste the repository link from earlier.
+
+## Testing:
+
+#### Internal Navigation:
+Each navigation option was testing to make sure that the user was taken to the correct place on the website.
+
+#### Search Bar Inputs:
+A variety of named locations were entered into the search bar to make sure that the data retrieved was correct. This task was completed by comparing data received for a city with the data disaplyed when the city's current weather conditions are searched for on the Open Weather Map website. Random letters, numbers, etc. were entered into the searchbar to make sure that the incorrect location name function was activated. This notification would inform the user that they have misspelt their chosen location.
+
+* The HTML code was passed through the W3C Validator. The errors that arose were in relation to the image and h3 elements. As the src attribtue are comppleted using IDs and Javascript no change would be required. A similar situation arises with the h3 element as its entry is decided by the javascript code.
+
+* The CSS code was passed through the Jigsaw validator and the single typo found was corrected.
