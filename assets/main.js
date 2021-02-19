@@ -26,7 +26,7 @@ search.addEventListener("click", function(){
     let city = document.getElementById('searchweather').value;
     citydata = `${website}${city}&appid=${appid}`;
     getData(citydata);
-})
+});
 
 // Conversion of JSON Records to HTML
 function displayData(data) {
@@ -42,7 +42,7 @@ function displayData(data) {
     displaytemperature = tempCalculation(kelvintemp);
     citytempRef.innerHTML = displaytemperature.toFixed(2)+" °C";
     feelsliketemp = parseFloat(data.main.feels_like);
-    feelsliketempdisplay = tempCalculation(feelsliketemp)
+    feelsliketempdisplay = tempCalculation(feelsliketemp);
     temperaturefeelsRef.innerHTML = "Reel Temperature Feels Like: " + feelsliketempdisplay.toFixed(2)+" °C";
     weatherid = parseInt(data.weather[0].id);
     weatherIconsDisplay(displaytemperature, windspeedhour, weatherid);
@@ -62,7 +62,7 @@ function backgroundPhoto(weatherref) {
     }
     else {
         mainbackgroundRef.src = 'assets/images/city.jpg';
-    };
+    }
 } 
 
 // Temperature Standard Conversion
@@ -81,28 +81,28 @@ function invalidLocation() {
 // Weather Icons Display
 function weatherIconsDisplay(temperature, windspeed, weatherid) {
     if (temperature < lowtemperature) {
-        temperatureiconRef.innerHTML = '<i class="fas fa-temperature-low fa-3x"></i>'
+        temperatureiconRef.innerHTML = '<i class="fas fa-temperature-low fa-3x"></i>';
     }
     else if (temperature > hightemperature) {
-        temperatureiconRef.innerHTML = '<i class="fas fa-temperature-high fa-3x"></i>'
+        temperatureiconRef.innerHTML = '<i class="fas fa-temperature-high fa-3x"></i>';
     }
     else {
-        temperatureiconRef.innerHTML = '<i class="fas fa-thermometer-half fa-3x"></i>'
-    };
+        temperatureiconRef.innerHTML = '<i class="fas fa-thermometer-half fa-3x"></i>';
+    }
 
     if (windspeed > strongwinds) {
-        document.getElementById('windspeedicon').innerHTML = '<i class="fas fa-wind fa-3x"></i>'
-    };
+        document.getElementById('windspeedicon').innerHTML = '<i class="fas fa-wind fa-3x"></i>';
+    }
 
     if (199 < weatherid && weatherid < 600) {
-        document.getElementById('attireicon').innerHTML = '<i class="fas fa-umbrella fa-3x"></i>'
+        document.getElementById('attireicon').innerHTML = '<i class="fas fa-umbrella fa-3x"></i>';
     }
     else if (599 < weatherid && weatherid < 700) {
-        document.getElementById('attireicon').innerHTML = '<i class="fas fa-mitten fa-3x"></i>'
+        document.getElementById('attireicon').innerHTML = '<i class="fas fa-mitten fa-3x"></i>';
     }
     else {
-        document.getElementById('attireicon').innerHTML = '<i class="fas fa-glasses fa-3x"></i>'
-    };
+        document.getElementById('attireicon').innerHTML = '<i class="fas fa-glasses fa-3x"></i>';
+    }
 }
 
 // Retrieve Data from Open Weather API
@@ -115,6 +115,6 @@ function getData() {
     })
     .catch(function(error){
         console.log(error);
-        invalidLocation()
+        invalidLocation();
     });
 }
