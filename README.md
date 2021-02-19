@@ -175,3 +175,16 @@ Alternatively, the Umbrella or Sunglasses project can be run locally:
 * Firstly, I would like to thank my mentor Simen Daehlin for his support and honest feedback throughout this project.
 * I wish to thank the [w3 schools](https://www.w3schools.com) for the wealth of programming knowledge uploaded and maintained by their team. This programming encyclopedia has helped me to improve my website by using features that it is unlikely that I would have found otherwise.
 * Finally, I would like to express my gratitude for the community of students, tutors, mentors and others in the Slack channels for maintaining such a welcoming and supportive environment.
+
+## References:
+* HTML/CSS/Javascript Code:
+1. Cards: Some code was taken from the [bootstrap website](https://getbootstrap.com/docs/4.0/components/card/) to allow text to overlay images.
+2. Jumbotron: Similar to the above, some of the code used was inspired from the [bootstrap website](https://getbootstrap.com/docs/4.0/components/jumbotron/)
+3. As mentioned previously, code from the [javascript.info website](https://javascript.info/fetch) and the [w3 schools](https://www.w3schools.com/js/js_api_fetch.asp) orrganisation. 
+
+* Weather Data:
+1. The Current Weather API is operated by [Open Weather Map](https://openweathermap.org/current)
+
+* Images:
+The images used in the project came from the following sources (Links are provided below):
+1. [Sunset-Landscape](https://unsplash.com/photos/62t_kKa2YlA)
