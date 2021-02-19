@@ -80,7 +80,11 @@ The use of icons for this project is key to helping user's understand and apprec
 
 All icons used in this project were from the Font Awesome collection.
 
+#### Images
 
+A variety of weather related images have been utilised in the making of the site. Images for weather conditions such as snow, rain and lightning were obtained amongst others. If statements were used to determine which image is use depending on the weather description ID  obtained from Open Weather API.
+
+All images used are referenced at the end of this document.
 
 #### Colour Scheme:
 
