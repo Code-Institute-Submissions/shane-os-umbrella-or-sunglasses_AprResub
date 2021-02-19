@@ -42,10 +42,8 @@
 
 #### User Stories:
  * As a user, I would like to find information about the weather conditions forecasted for my area.
- * As a user, I would like to find information about the weather conditions forecasted for the area that I am travelling to.
- * As a user, I would like to know if I need to take precautions based on the weather conditions forecasted. (e.g. umbrella, raincoat, sunglasses)
- * As a user, I would like to change the website display settings to suit my requirements.
- * As a user, I wish to contact the site administrator if I have an issue with the site.
+ * As a user, I would like to find information about the weather conditions for the area that I am travelling to.
+ * As a user, I would like to know if I need to take precautions based on the weather conditions forecasted. (e.g. umbrella, gloves, sunglasses)
  
 #### Site Owner Goals:
  * As a site owner, I want to provide users with information on forecasted weather conditions in their chosen area.
