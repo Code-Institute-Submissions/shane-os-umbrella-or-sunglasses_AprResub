@@ -116,8 +116,6 @@ To display accurate weather information on the webpage when a user enters their 
 
 * The fetch utility within javascript was used to get the location entered into the search bar by the user, request the JSON data from the Open Weather API. If an error occurred through incorrect location name being entered into the search bar, the fetch function would catch the error. The JSON data is converted into a more readable format through this function.
 
-
-
 ## Features:
 
 #### Developed:
@@ -130,6 +128,26 @@ To display accurate weather information on the webpage when a user enters their 
  * Multiple location display
  * Weather maps
  * Multiple days weather forecast
+
+## Testing:
+
+#### Internal Navigation:
+Each navigation option was testing to make sure that the user was taken to the correct place on the website.
+
+#### Search Bar Inputs:
+A variety of named locations were entered into the search bar to make sure that the data retrieved was correct. This task was completed by comparing data received for a city with the data disaplyed when the city's current weather conditions are searched for on the Open Weather Map website. Random letters, numbers, etc. were entered into the searchbar to make sure that the incorrect location name function was activated. This notification would inform the user that they have misspelt their chosen location.
+
+* The HTML code was passed through the W3C Validator. The errors that arose were in relation to the image and h3 elements. As the src attribtue are comppleted using IDs and Javascript no change would be required. A similar situation arises with the h3 element as its entry is decided by the javascript code.
+
+* The CSS code was passed through the Jigsaw validator and the single typo found was corrected.
+
+## Resolution of Bugs:
+
+The main issues encountered when creating this website were with regards to the use of the fetch utility in javascript and the conditional displaying of images, text and icons.
+
+Initially I found the fetch function in javascript to be quite difficult to use. At the beginning when I was able to retrieve the JSON data I had trouble obtaining the exact weather data that I required. The data was show as "undefined" when shown in a browser. I overcame this confusion through the use of online materials such as the [javascript.info website](https://javascript.info/fetch) and the [w3 schools](https://www.w3schools.com/js/js_api_fetch.asp) orrganisation programming resources. 
+
+When I used if statements inside functions and returned values to other functions and elements, I encountered some difficulty as often the incorrect icon or image would appear. The icons and images that appear are based on the weather data retrieved from the Open Weather Map API. I noticed that the mistake was occurring due to the lack of an extra equals sign in one part and the incorrect statements used for if statments in some function. Once these issues were resolved, the images and icons showed as expected.
 
 ## Deployment:
 The Umbrella or Sunglasses website is stored as a repository on the Github site. The website was created using the Gitpod Integrated Development Environment. Utilising the Github Pages feature, the Umbrella or Sunglasses website was deployed. The process for deploying the site on Github pages was as follows:
@@ -149,15 +167,3 @@ Alternatively, the Umbrella or Sunglasses project can be run locally:
 4. Open your Integrated Development Environment (IDE) and open the Git Terminal if not already opened.
 5. Using the change working directory command ($ cd filepath) enter the location where the cloned directory will be stored.
 6. Finally, use the "$ git clone" command and paste the repository link from earlier.
-
-## Testing:
-
-#### Internal Navigation:
-Each navigation option was testing to make sure that the user was taken to the correct place on the website.
-
-#### Search Bar Inputs:
-A variety of named locations were entered into the search bar to make sure that the data retrieved was correct. This task was completed by comparing data received for a city with the data disaplyed when the city's current weather conditions are searched for on the Open Weather Map website. Random letters, numbers, etc. were entered into the searchbar to make sure that the incorrect location name function was activated. This notification would inform the user that they have misspelt their chosen location.
-
-* The HTML code was passed through the W3C Validator. The errors that arose were in relation to the image and h3 elements. As the src attribtue are comppleted using IDs and Javascript no change would be required. A similar situation arises with the h3 element as its entry is decided by the javascript code.
-
-* The CSS code was passed through the Jigsaw validator and the single typo found was corrected.
