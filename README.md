@@ -142,6 +142,8 @@ A variety of named locations were entered into the search bar to make sure that 
 
 * The CSS code was passed through the Jigsaw validator and the single typo found was corrected.
 
+* The Javascript code was run through the JSHint validator and the main errors found were in relation to semi-colons. Once these errors were fixed the code was re-run and these errors were no longer present. 
+
 ## Resolution of Bugs:
 
 The main issues encountered when creating this website were with regards to the use of the fetch utility in javascript and the conditional displaying of images, text and icons.
