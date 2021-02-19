@@ -74,6 +74,12 @@ Initially the designs for the wireframes were created using pen and pencil. From
 
 The completed wireframes are stored [here](https://github.com/shane-os/umbrella-or-sunglasses/tree/master/Wireframes)
 
+#### Icons:
+
+The use of icons for this project is key to helping user's understand and appreciate the weather conditions in their area. The icons displayed will be differ depending on the weather conditions in their area. For example, if the wind speed is above 20km/hr a wind icon appears in the weather guidance section. Also, there are three thermometer icons, only one showing at a time depending on if the temperature is moderate, low or high.
+
+
+
 #### Colour Scheme:
 
 ![Colour Palette](https://github.com/shane-os/umbrella-or-sunglasses/blob/master/assets/images/umbrella_or_sunglasses_colours.png)
