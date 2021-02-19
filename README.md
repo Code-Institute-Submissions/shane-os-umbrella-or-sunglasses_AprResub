@@ -170,3 +170,8 @@ Alternatively, the Umbrella or Sunglasses project can be run locally:
 4. Open your Integrated Development Environment (IDE) and open the Git Terminal if not already opened.
 5. Using the change working directory command ($ cd filepath) enter the location where the cloned directory will be stored.
 6. Finally, use the "$ git clone" command and paste the repository link from earlier.
+
+## Accreditation & Gratitude:
+* Firstly, I would like to thank my mentor Simen Daehlin for his support and honest feedback throughout this project.
+* I wish to thank the [w3 schools](https://www.w3schools.com) for the wealth of programming knowledge uploaded and maintained by their team. This programming encyclopedia has helped me to improve my website by using features that it is unlikely that I would have found otherwise.
+* Finally, I would like to express my gratitude for the community of students, tutors, mentors and others in the Slack channels for maintaining such a welcoming and supportive environment.
