@@ -36,10 +36,9 @@
  * Various infographics and other content mediums will be available on the site to engage users and represent data in a meaningful manner that is applicable to their daily lives.
 
 #### User Goals:
- * Retrieve weather related information for their desired area.
- * Understand the expected weather conditions and prepare appropriately for them.
- * Find information on forecasted weather conditions for special events.
- * Contact website administrator to seek information/ provide feedback.
+ * Retrieve weather related information for their area.
+ * Understand the current weather conditions and prepare appropriately for them.
+ * See the weather conditions for another chosen area.
 
 #### User Stories:
  * As a user, I would like to find information about the weather conditions forecasted for my area.
