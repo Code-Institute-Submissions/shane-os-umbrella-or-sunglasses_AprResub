@@ -20,7 +20,6 @@ const weatherconditionsiconRef = document.querySelector('#weatherconditionsicon'
 const temperatureiconRef = document.querySelector('#temperatureicon');
 const temperaturefeelsRef = document.querySelector('#temperaturefeels');
 const mainbackgroundRef = document.querySelector('#weatherphoto');
-const weatherdisplayinfoRef = document.querySelector('#weatherdisplayinfo');
 
 // Location Search Bar Listener
 search.addEventListener("click", function(){
@@ -46,7 +45,6 @@ function displayData(data) {
     feelsliketempdisplay = tempCalculation(feelsliketemp)
     temperaturefeelsRef.innerHTML = "Reel Temperature Feels Like: " + feelsliketempdisplay.toFixed(2)+" °C";
     weatherid = parseInt(data.weather[0].id);
-    weatherdisplayinfoRef.innerHTML = data.weather[0].id;
     weatherIconsDisplay(displaytemperature, windspeedhour, weatherid);
     backgroundPhoto(weatherid);
 }
