@@ -72,7 +72,7 @@ Initially the designs for the wireframes were created using pen and pencil. From
  * Tablet
  * Desktop
 
-The completed wireframes are stored [here](https://github.com/shane-os/umbrella-or-sunglasses/blob/master/assets/Wireframes)
+The completed wireframes are stored [here](https://github.com/shane-os/umbrella-or-sunglasses/tree/master/Wireframes)
 
 #### Colour Scheme:
 
