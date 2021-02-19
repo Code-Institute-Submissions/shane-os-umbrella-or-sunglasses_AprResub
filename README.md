@@ -20,7 +20,6 @@
   * Libraries & Tools
 ### Open Weather Map API:
   * Fetch 
-  * Current Weather
 ### Features
   * Developed
   * Future Implementation
@@ -114,6 +113,10 @@ For the aesthetics of the website, I decided to utilise colours associated with 
 
 ## Open Weather Map API:
 To display accurate weather information on the webpage when a user enters their chosen city into the search box, the site must make use of an API (Application Programming Interface). Open Weather Map was chosen as the API to be used for the project due to the detailed weather information it provides, reliability and high number of API calls allowed within a given timeframe (Up to 1,000,000 API calls per month at the free tier). This would allow the Umbrella or Sunglasses website to function optimally when accessed by potential users. The website can be accessed [here](https://openweathermap.org/)
+
+* The fetch utility within javascript was used to get the location entered into the search bar by the user, request the JSON data from the Open Weather API. If an error occurred through incorrect location name being entered into the search bar, the fetch function would catch the error. The JSON data is converted into a more readable format through this function.
+
+
 
 ## Features:
 
