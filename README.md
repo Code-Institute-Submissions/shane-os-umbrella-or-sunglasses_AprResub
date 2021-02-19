@@ -54,14 +54,25 @@
  * Area search function operates correctly and promptly.
  * Up to date and accurate weather condition information is provided.
  * Site is easy to navigate.
- * Contact form validates user imputed information and sends information to administrator.
 
 #### User Expectations:
  * Information related to weather conditions is displayed in a visually appealing manner.
  * Data presented is clear and concise thus reducing potential for confusion.
- * Site internal and external links direct users to expected destination link.
+ * Site internal links direct users to the expected destination link.
 
 ## Site Layout and Design
+
+Taking into account the expected user requirements for this website, I decided at the beginning that a single page scrollable website would be more appropriate than a multi-page concept. This is to keep the website easier to navigate and more focused on its purpose: To provide users with accurate information on weather conditions in their chosen area in an efficient and appealling medium. 
+
+#### Wireframes:
+
+Initially the designs for the wireframes were created using pen and pencil. From these sketches wireframes were created using the Balsamic Wireframes Application. Three sets of wireframes were created for the following device types:
+
+ * Mobile
+ * Tablet
+ * Desktop
+
+The completed wireframes are stored [here](https://github.com/shane-os/umbrella-or-sunglasses/blob/master/assets/Wireframes)
 
 #### Colour Scheme:
 
