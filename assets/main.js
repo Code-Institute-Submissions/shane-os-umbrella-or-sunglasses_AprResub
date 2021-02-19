@@ -44,7 +44,7 @@ function displayData(data) {
     citytempRef.innerHTML = displaytemperature.toFixed(2)+" °C";
     feelsliketemp = parseFloat(data.main.feels_like);
     feelsliketempdisplay = tempCalculation(feelsliketemp)
-    temperaturefeelsRef.innerHTML = feelsliketempdisplay.toFixed(2)+" °C";
+    temperaturefeelsRef.innerHTML = "Reel Temperature Feels Like: " + feelsliketempdisplay.toFixed(2)+" °C";
     weatherid = parseInt(data.weather[0].id);
     weatherdisplayinfoRef.innerHTML = data.weather[0].id;
     weatherIconsDisplay(displaytemperature, windspeedhour, weatherid);
