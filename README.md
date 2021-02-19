@@ -59,6 +59,7 @@
  * Data presented is clear and concise thus reducing potential for confusion.
  * Site internal links direct users to the expected destination link.
 
+![Am I Responsive Image](https://github.com/shane-os/umbrella-or-sunglasses/blob/master/assets/images/amiresponsive-umbrella-or-sunglasses.PNG)
 ## Site Layout and Design
 
 Taking into account the expected user requirements for this website, I decided at the beginning that a single page scrollable website would be more appropriate than a multi-page concept. This is to keep the website easier to navigate and more focused on its purpose: To provide users with accurate information on weather conditions in their chosen area in an efficient and appealling medium. 
