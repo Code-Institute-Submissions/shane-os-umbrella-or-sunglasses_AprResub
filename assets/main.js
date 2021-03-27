@@ -30,13 +30,13 @@ search.addEventListener("click", function(){
         getData(citydata);
     }
     else {
-        invalidLocation()
+        invalidLocation(validitycheck)
     }
 });
 
 // Error Checking
 function locationErrorCheck(city){
-    if (city == null ) {
+    if (city == "" ) {
         validitycheck = "Empty";
         return validitycheck;
     }
@@ -92,8 +92,8 @@ function tempCalculation(temp){
 }
 
 // Invalid Location Entry Alert
-function invalidLocation() {
-    alert("Location Name Invalid!");
+function invalidLocation(message = validitycheck) {
+    alert("Location Name Invalid! Value entered is: \n" + message +"\n Please enter a new value");
 }
 
 // Weather Icons Display
