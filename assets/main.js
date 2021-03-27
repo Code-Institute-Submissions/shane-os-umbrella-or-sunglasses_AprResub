@@ -24,9 +24,27 @@ const mainbackgroundRef = document.querySelector('#weatherphoto');
 // Location Search Bar Listener
 search.addEventListener("click", function(){
     let city = document.getElementById('searchweather').value;
-    citydata = `${website}${city}&appid=${appid}`;
-    getData(citydata);
+    validitycheck = locationErrorCheck(city)
+    if (validitycheck == "Proceed") {
+        citydata = `${website}${city}&appid=${appid}`;
+        getData(citydata);
+    }
+    else {
+        invalidLocation()
+    }
 });
+
+// Error Checking
+function locationErrorCheck(city){
+    if (city == null ) {
+        validitycheck = "Empty";
+        return validitycheck;
+    }
+    else {
+        validitycheck = "Proceed";  
+        return validitycheck;
+    }
+}
 
 // Conversion of JSON Records to HTML
 function displayData(data) {
