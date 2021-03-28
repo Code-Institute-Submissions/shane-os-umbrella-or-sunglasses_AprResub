@@ -136,3 +136,21 @@ function getData() {
         invalidLocation();
     });
 }
+
+// Change Temperature Measurement
+function metricvalue(){
+    chosen = document.getElementsByName('metrics');
+    for(i = 0; i < chosen.length; i++) {
+                if(chosen[i].checked)
+                alert(chosen[i].value);
+   /* if (chosen === "celcius") {
+        citytempRef.innerHTML = 12;
+    }
+    else if (chosen === "fahreinheit") {
+        citytempRef.innerHTML = 24;
+    }
+    else {
+        citytempRef.innerHTML = 36;
+    }
+    alert(chosen.value);*/
+}}
