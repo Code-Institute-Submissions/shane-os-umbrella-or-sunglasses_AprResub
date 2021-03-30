@@ -77,11 +77,12 @@
     </div>
 </section>
 <section id="Icon Information">
+<!--1st Modal: Attire-->
     <div class="row">
         <div class="container">
             <h3>Icon Information</h3>
-            <button  data-toggle="modal" data-target="#infoModal">Definitions</button>
-            <div class="modal fade" id="infoModal" role="dialog">
+            <button  data-toggle="modal" data-target="#attireModal">Definitions</button>
+            <div class="modal fade" id="attireModal" role="dialog">
                 <div class="modal-dialog"></div>
                 <div class="modal-content">
                     <div class="modal-header">
@@ -95,6 +96,32 @@
                         <p><i class="fas fa-glasses fa-3x"></i>Clear skies are expected in your area</p>
                         <h6>Gloves</h6>
                         <p><i class="fas fa-mitten fa-3x"></i>Snow/ Wintry conditions are expected in your area</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                    </div>
+                 </div>
+            </div>
+        </div>
+<!--2nd Modal: Attire-->
+        <div class="container">
+            <button  data-toggle="modal" data-target="#tempModal">Temperature</button>
+            <div class="modal fade" id="tempModal" role="dialog">
+                <div class="modal-dialog"></div>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Temperature Explanations</h5>
+                        <button type="button" class="close btn-dark" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Low Temperature</h6>
+                        <p><i class="fas fa-temperature-low fa-3x"></i>A temperature of below 5°C is expected in your area</p>
+                        <h6>Moderate Temperature</h6>
+                        <p><i class="fas fa-thermometer-half fa-3x"></i>A temperature of between 5°C  and 20°C is expected in your area</p>
+                        <h6>High Temperature</h6>
+                        <p><i class="fas fa-temperature-high fa-3x"></i>A temperature of above 20°C is expected in your area</p>
+                        <h6>Feels Like Temperature</h6>
+                        <p>Taking into account wind speed, humidity, air pressure and other factors, how warm it would feel to the average person</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
