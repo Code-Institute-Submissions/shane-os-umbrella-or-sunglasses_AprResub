@@ -88,6 +88,7 @@ function tempCalculation(temp){
     kelvin = temp;
     celcius = temp + tempconv;
     fahrenheit = (temp + tempconv) * 9/5 + 32;
+    temprecords = [celcius,fahrenheit,kelvin];
     return celcius;
 }
 
@@ -141,16 +142,16 @@ function getData() {
 function metricvalue(){
     chosen = document.getElementsByName('metrics');
     for(i = 0; i < chosen.length; i++) {
-                if(chosen[i].checked)
-                alert(chosen[i].value);
-   /* if (chosen === "celcius") {
-        citytempRef.innerHTML = 12;
+        if(chosen[i].checked)
+        tempmetric = i;
+    };
+    if (tempmetric == 0) {
+        citytempRef.innerHTML = temprecords[0];
     }
-    else if (chosen === "fahreinheit") {
-        citytempRef.innerHTML = 24;
+    else if (tempmetric == 1) {
+        citytempRef.innerHTML = temprecords[1];
     }
     else {
-        citytempRef.innerHTML = 36;
+        citytempRef.innerHTML = temprecords[2];
     }
-    alert(chosen.value);*/
-}}
+}
