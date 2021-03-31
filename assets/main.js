@@ -58,10 +58,10 @@ function displayData(data) {
     citywindRef.innerHTML = windspeedhour.toFixed(2)+"Km/hr";
     kelvintemp = parseFloat(data.main.temp);
     displaytemperature = tempCalculation(kelvintemp);
-    citytempRef.innerHTML = displaytemperature.toFixed(2)+" °C";
+    citytempRef.innerHTML = displaytemperature;
     feelsliketemp = parseFloat(data.main.feels_like);
     feelsliketempdisplay = tempCalculation(feelsliketemp);
-    temperaturefeelsRef.innerHTML = "Reel Temperature Feels Like: " + feelsliketempdisplay.toFixed(2)+" °C";
+    temperaturefeelsRef.innerHTML = "Reel Temperature Feels Like: " + feelsliketempdisplay;
     weatherid = parseInt(data.weather[0].id);
     weatherIconsDisplay(displaytemperature, windspeedhour, weatherid);
     backgroundPhoto(weatherid);
@@ -87,7 +87,11 @@ function backgroundPhoto(weatherref) {
 function tempCalculation(temp){
     kelvin = temp;
     celcius = temp + tempconv;
+    
     fahrenheit = (temp + tempconv) * 9/5 + 32;
+    celcius = celcius.toFixed(2)+" °C";
+    fahrenheit = fahrenheit.toFixed(2)+" °F";
+    kelvin = kelvin.toFixed(2)+" K";
     temprecords = [celcius,fahrenheit,kelvin];
     return celcius;
 }
