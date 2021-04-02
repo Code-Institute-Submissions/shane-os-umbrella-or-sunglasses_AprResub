@@ -34,6 +34,20 @@ search.addEventListener("click", function(){
     }
 });
 
+searchweather.addEventListener("keyup", function(event){
+    if (event.keyCode === 13) {
+        let city = document.getElementById('searchweather').value;
+        validitycheck = locationErrorCheck(city);
+        if (validitycheck == "Proceed") {
+            citydata = `${website}${city}&appid=${appid}`;
+            getData(citydata);
+        }
+        else {
+            invalidLocation(validitycheck);
+        }
+    }
+});
+
 // Error Checking
 function locationErrorCheck(city){
     if (city == "" ) {
