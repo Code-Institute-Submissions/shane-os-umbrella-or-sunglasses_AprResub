@@ -111,10 +111,14 @@ function tempCalculation(temp){
 }
 
 // Invalid Location Entry Alert
-function invalidLocation(message = validitycheck) {
-    alert("Location Name Invalid! Value entered is: \n" + message +"\n Please enter a new value");
+function invalidLocation() {
+    Swal.fire({
+        title: 'Invalid City Name',
+        text: "Please do not use special characters or numbers when entering a city into the searchbar.",
+        icon: 'error',
+        confirmButtonText: 'Close'
+    });
 }
-
 // Weather Icons Display
 function weatherIconsDisplay(temperature, windspeed, weatherid) {
     if (temperature < lowtemperature) {
