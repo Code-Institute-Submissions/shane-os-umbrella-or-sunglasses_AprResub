@@ -118,6 +118,7 @@ function invalidLocation() {
         icon: 'error',
         confirmButtonText: 'Close'
     });
+    document.getElementById('searchweather').value = "";
 }
 // Weather Icons Display
 function weatherIconsDisplay(temperature, windspeed, weatherid) {
