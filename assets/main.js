@@ -155,8 +155,7 @@ function getData() {
         console.log(weatherdata);
         displayData(weatherdata);
     })
-    .catch(function(error){
-        console.log(error);
+    .catch(function(){
         invalidLocation();
     });
 }
