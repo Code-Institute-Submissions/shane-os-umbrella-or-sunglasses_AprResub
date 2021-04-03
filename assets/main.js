@@ -71,10 +71,10 @@ function displayData(data) {
     windspeedhour = parseFloat(data.wind.speed)*((60*60)/1000);
     citywindRef.innerHTML = windspeedhour.toFixed(2)+"Km/hr";
     kelvintemp = parseFloat(data.main.temp);
-    displaytemperature = tempCalculation(kelvintemp);
+    displaytemperature = realTempCalculation(kelvintemp);
     citytempRef.innerHTML = displaytemperature;
     feelsliketemp = parseFloat(data.main.feels_like);
-    feelsliketempdisplay = tempCalculation(feelsliketemp);
+    feelsliketempdisplay = feelsLikeTempCalculation(feelsliketemp);
     temperaturefeelsRef.innerHTML = "Reel Temperature Feels Like: " + feelsliketempdisplay;
     weatherid = parseInt(data.weather[0].id);
     weatherIconsDisplay(displaytemperature, windspeedhour, weatherid);
@@ -97,16 +97,27 @@ function backgroundPhoto(weatherref) {
     }
 } 
 
-// Temperature Standard Conversion
-function tempCalculation(temp){
+// Real Temperature Standard Conversion
+function realTempCalculation(temp){
     kelvin = temp;
     celcius = temp + tempconv;
-    
     fahrenheit = (temp + tempconv) * 9/5 + 32;
     celcius = celcius.toFixed(2)+" °C";
     fahrenheit = fahrenheit.toFixed(2)+" °F";
     kelvin = kelvin.toFixed(2)+" K";
-    temprecords = [celcius,fahrenheit,kelvin];
+    realtemprecords = [celcius,fahrenheit,kelvin];
+    return celcius;
+}
+
+// Feels Like Temperature Standard Conversion
+function feelsLikeTempCalculation(temp){
+    kelvin = temp;
+    celcius = temp + tempconv;
+    fahrenheit = (temp + tempconv) * 9/5 + 32;
+    celcius = celcius.toFixed(2)+" °C";
+    fahrenheit = fahrenheit.toFixed(2)+" °F";
+    kelvin = kelvin.toFixed(2)+" K";
+    feelstemprecords = [celcius,fahrenheit,kelvin];
     return celcius;
 }
 
@@ -168,12 +179,15 @@ function metricvalue(){
         tempmetric = i;
     };
     if (tempmetric == 0) {
-        citytempRef.innerHTML = temprecords[0];
+        citytempRef.innerHTML = realtemprecords[0];
+        temperaturefeelsRef.innerHTML = "Reel Temperature Feels Like: " + feelstemprecords[0];
     }
     else if (tempmetric == 1) {
-        citytempRef.innerHTML = temprecords[1];
+        citytempRef.innerHTML = realtemprecords[1];
+        temperaturefeelsRef.innerHTML = "Reel Temperature Feels Like: " + feelstemprecords[1];
     }
     else {
-        citytempRef.innerHTML = temprecords[2];
+        citytempRef.innerHTML = realtemprecords[2];
+        temperaturefeelsRef.innerHTML = "Reel Temperature Feels Like: " + feelstemprecords[2];
     }
 }
