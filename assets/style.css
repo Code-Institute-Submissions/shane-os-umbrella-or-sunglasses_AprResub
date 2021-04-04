@@ -71,12 +71,14 @@ searchweather {
 
 .card {
     text-align: center;
+    justify-content: center;
     border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
     outline: none;
     border: none;
     width: 80%;
+    display: flexbox;
 }
 
 .card-header {
@@ -91,6 +93,8 @@ searchweather {
     border-radius: 15px;
     background-size: cover;
     background-position: center;
+    filter: brightness(90%);
+    filter: drop-shadow(4px 0px 5px gray);
 }
 
 #citytemp {
