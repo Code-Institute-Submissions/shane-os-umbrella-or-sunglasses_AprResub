@@ -105,8 +105,9 @@ searchweather {
     font: large;
 }
 
-.guidance p {
-    font-size: 40px;
+.guidanceicons p {
+    margin-top: 10px;
+    font-size: 18px;
 }
 
 /* Footer */
@@ -135,5 +136,10 @@ footer p {
 }
 
 @media only screen and (min-width: 600px) {
-
+    body {
+        font-size: 22px;
+    }
+    .guidanceicons p {
+        font-size: 24px;
+    }
 }
