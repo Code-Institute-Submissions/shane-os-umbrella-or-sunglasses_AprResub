@@ -163,7 +163,6 @@ function getData() {
     fetch(citydata)
     .then(response => response.json())
     .then(function(weatherdata){
-        console.log(weatherdata);
         displayData(weatherdata);
     })
     .catch(function(){
