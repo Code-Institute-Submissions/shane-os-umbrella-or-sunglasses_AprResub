@@ -150,3 +150,15 @@ footer p {
         font-size: 32px;
     }
 }
+
+@media only screen and (min-width: 900px) {
+    body {
+        font-size: 32px;
+    }
+    .guidanceicons p {
+        font-size: 32px;
+    }
+    h4 {
+        font-size: 40px;
+    }
+}
