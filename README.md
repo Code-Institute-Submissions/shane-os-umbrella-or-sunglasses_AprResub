@@ -3,21 +3,21 @@
 ![Sunset Landscape](https://github.com/shane-os/umbrella-or-sunglasses/blob/master/assets/images/sunset-landscape.jpg)
 
 ## Contents
-### [UX (User Experience)](#userexperience)
+### [UX (User Experience)](#ux-user-experience)
  * [Project Goals](#project-goals)
  * [User Goals](#user-goals)
  * [User Stories](#user-stories)
  * [Site Owner Goals](#site-owner-goals)
  * [User Requirements](#user-requirements)
  * [User Expectations](#user-expectations)
-### [Site Layout & Design](#site-layout-&-design)
+### [Site Layout and Design](#site-layout-and-design)
   * [Wireframes](#wireframes)
   * [Icons](#icons)
   * [Images](#images)
   * [Colour Scheme](#colour-scheme)
 ### [Technologies](#technologies)
   * [Programming Languages](#programming-languages)
-  * [Libraries & Tools](#libraries-&-tools)
+  * [Libraries and Tools](#libraries-and-tools)
 ### [Open Weather Map API](#open-weather-map-api)
   * [Fetch](#fetch) 
 ### [Features](#features)
@@ -26,7 +26,7 @@
 ### [Testing](#testing)
 ### [Bugs](#bugs)
 ### [Deployment](#deployment)
-### [Accreditation & Gratitude](#accreditation-&-gratitude)
+### [Accreditation and Gratitude](#accreditation-and-gratitude)
 ### [References](#references)
 
 ## UX (User Experience):
@@ -104,7 +104,7 @@ For the aesthetics of the website, I decided to utilise colours associated with 
  * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
  * [JQuery](https://jquery.com/)
  
-#### Libraries & Tools:
+#### Libraries and Tools:
  * [Git](https://git-scm.com/)
  * [Github](https://github.com/)
  * [Gitpod](https://www.gitpod.io/)
@@ -114,9 +114,10 @@ For the aesthetics of the website, I decided to utilise colours associated with 
  * [SweetAlert2](https://sweetalert2.github.io/#usage)
 
 ## Open Weather Map API:
-To display accurate weather information on the webpage when a user enters their chosen city into the search box, the site must make use of an API (Application Programming Interface). Open Weather Map was chosen as the API to be used for the project due to the detailed weather information it provides, reliability and high number of API calls allowed within a given timeframe (Up to 1,000,000 API calls per month at the free tier). This would allow the Umbrella or Sunglasses website to function optimally when accessed by potential users. The website can be accessed [here](https://openweathermap.org/)
+To display accurate weather information on the webpage when a user enters their chosen city into the search box, the site must make use of an API (Application Programming Interface). Open Weather Map was chosen as the API to be used for the project due to the detailed weather Fetchinformation it provides, reliability and high number of API calls allowed within a given timeframe (Up to 1,000,000 API calls per month at the free tier). This would allow the Umbrella or Sunglasses website to function optimally when accessed by potential users. The website can be accessed [here](https://openweathermap.org/)
 
-* The fetch utility within javascript was used to get the location entered into the search bar by the user, request the JSON data from the Open Weather API. If an error occurred through incorrect location name being entered into the search bar, the fetch function would catch the error. The JSON data is converted into a more readable format through this function.
+#### Fetch:
+The fetch utility within javascript was used to get the location entered into the search bar by the user, request the JSON data from the Open Weather API. If an error occurred through incorrect location name being entered into the search bar, the fetch function would catch the error. The JSON data is converted into a more readable format through this function.
 
 ## Features:
 
@@ -129,7 +130,7 @@ To display accurate weather information on the webpage when a user enters their 
  * Change Temperature Metric Display
 
 
-#### Future Development:
+#### Future Implementation:
  * Multiple location display
  * Weather maps
  * Multiple days weather forecast
@@ -175,7 +176,7 @@ Alternatively, the Umbrella or Sunglasses project can be run locally:
 5. Using the change working directory command ($ cd filepath) enter the location where the cloned directory will be stored.
 6. Finally, use the "$ git clone" command and paste the repository link from earlier.
 
-## Accreditation & Gratitude:
+## Accreditation and Gratitude:
 * Firstly, I would like to thank my mentor Simen Daehlin for his support and honest feedback throughout this project.
 * I wish to thank the [w3 schools](https://www.w3schools.com) for the wealth of programming knowledge uploaded and maintained by their team. This programming encyclopedia has helped me to improve my website by using features that it is unlikely that I would have found otherwise.
 * Finally, I would like to express my gratitude for the community of students, tutors, mentors and others in the Slack channels for maintaining such a welcoming and supportive environment.
