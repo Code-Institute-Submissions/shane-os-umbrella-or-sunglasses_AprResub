@@ -20,7 +20,7 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 /* Heading Text */
@@ -29,6 +29,7 @@ h3 {
     font-family: 'Quicksand', sans-serif;
     font-size: 40px;
     text-align: center;
+    font-weight: 700;
 }
 
 /* Jumbotron */
@@ -74,8 +75,6 @@ searchweather {
     margin-right: auto;
     outline: none;
     border: none;
-    min-height: 200px;
-    overflow: hidden;
 }
 
 .card-header {
@@ -97,7 +96,6 @@ searchweather {
 /* Weather Guidance */
 
 .guidanceicons span {
-    display: inline-block;
     margin: 20px;
     font: large;
 }
