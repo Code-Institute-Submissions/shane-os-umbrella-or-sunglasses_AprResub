@@ -36,31 +36,35 @@
 </section>
 <!--Weather Conditions-->
 <section id="Weather">
-    <div class="row"> 
-        <div class="card text-white">
-            <img id="weatherphoto" class="card-img">
-            <div class="card-img-overlay">
-                <div class="card-header">
-                    <h3 id="cityname"></h3>
+    <div class="container">
+        <div class="row"> 
+            <div class="card text-white">
+                <img id="weatherphoto" class="card-img">
+                <div class="card-img-overlay">
+                    <div class="card-header">
+                        <h3 id="cityname"></h3>
+                    </div>
+                    <span id="countryname"></span>
+                    <span id="weatherconditionsicon"></span>
+                    <span id="citydescription"></span>
+                    <p id="citywind"></p>
+                    <p id="citytemp"></p>
+                    <p id="datetime"></p>
                 </div>
-                <span id="countryname"></span>
-                <span id="weatherconditionsicon"></span>
-                <span id="citydescription"></span>
-                <p id="citywind"></p>
-                <p id="citytemp"></p>
-                <p id="datetime"></p>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div id="tempchange">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">Temperature Metrics</h4>
-                    <input type="radio" name="metrics" value="C" aria-checked="checked">Celcius
-                    <input type="radio" name="metrics" value="F">Fahreinheit
-                    <input type="radio" name="metrics" value="K">Kelvin
-                    <button id="Change" type="button" onclick="metricvalue()">Change Measurements</button>
+    <div class="container">
+        <div class="row">
+            <div id="tempchange">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Temperature Metrics</h4>
+                        <input type="radio" name="metrics" value="C" aria-checked="checked">Celcius
+                        <input type="radio" name="metrics" value="F">Fahreinheit
+                        <input type="radio" name="metrics" value="K">Kelvin
+                        <button id="Change" type="button" onclick="metricvalue()">Change Measurements</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,18 +72,20 @@
 </section>
 <!--Weather Guidance-->
 <section id="Guidance">
-    <div class="row">
-        <div class="card text-white">
-            <img class="card-img" src="assets/images/sunset-landscape.jpg" alt="Sunset landscape">
-            <div class="card-img-overlay">
-                <div class="card-header">
-                    <h3>Weather Guidance</h3>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="card text-white">
+                <img class="card-img" src="assets/images/sunset-landscape.jpg" alt="Sunset landscape">
+                <div class="card-img-overlay">
+                    <div class="card-header">
+                        <h3>Weather Guidance</h3>
+                    </div>
                     <div class="guidanceicons">
-                    <span id="temperatureicon"></span>
-                    <span id="windspeedicon"></span>
-                    <span id="attireicon"></span>
-                    <p id="temperaturefeels"></p>
+                        <span id="temperatureicon"></span>
+                        <span id="windspeedicon"></span>
+                        <span id="attireicon"></span>
+                        <p id="temperaturefeels"></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,53 +93,56 @@
 </section>
 <section id="Icon Information">
 <!--1st Modal: Attire-->
-    <div class="row">
-        <h3>Icon Information</h3>
-        <div class="btn-toolbar" role="toolbar" aria-label="Icon Information Modals">
-            <div class="btn-group" role="group" aria-label="First group">
-            <button class="btn btn-info" data-toggle="modal" data-target="#attireModal">Definitions</button>
-                <div class="modal fade" id="attireModal" role="dialog">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Icon Information</h5>
-                                <button type="button" class="close btn-dark" data-dismiss="modal">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <h6>Umbrella</h6>
-                                <p><i class="fas fa-umbrella fa-3x"></i>Rain is expected in your area</p>
-                                <h6>Sunglasses</h6>
-                                <p><i class="fas fa-glasses fa-3x"></i>Clear skies are expected in your area</p>
-                                <h6>Gloves</h6>
-                                <p><i class="fas fa-mitten fa-3x"></i>Snow/ Wintry conditions are expected in your area</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+    <div class="container">
+        <div class="row">
+            <h3>Icon Information</h3>
+            <div class="btn-toolbar" role="toolbar" aria-label="Icon Information Modals">
+                <div class="btn-group" role="group" aria-label="First group">
+                    <button class="btn btn-info" data-toggle="modal" data-target="#attireModal">Definitions</button>
+                    <div class="modal fade" id="attireModal" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Icon Information</h5>
+                                    <button type="button" class="close btn-dark" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Umbrella</h6>
+                                    <p><i class="fas fa-umbrella fa-3x"></i>Rain is expected in your area</p>
+                                    <h6>Sunglasses</h6>
+                                    <p><i class="fas fa-glasses fa-3x"></i>Clear skies are expected in your area</p>
+                                    <h6>Gloves</h6>
+                                    <p><i class="fas fa-mitten fa-3x"></i>Snow/ Wintry conditions are expected in your area</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-<!--2nd Modal: Attire-->
-            <button class="btn btn-info" data-toggle="modal" data-target="#tempModal">Temperature</button>
-            <div class="modal fade" id="tempModal" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Temperature Explanations</h5>
-                            <button type="button" class="close btn-dark" data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <h6>Low Temperature</h6>
-                            <p><i class="fas fa-temperature-low fa-3x"></i>A temperature of below 5°C is expected in your area</p>
-                            <h6>Moderate Temperature</h6>
-                            <p><i class="fas fa-thermometer-half fa-3x"></i>A temperature of between 5°C  and 20°C is expected in your area</p>
-                            <h6>High Temperature</h6>
-                            <p><i class="fas fa-temperature-high fa-3x"></i>A temperature of above 20°C is expected in your area</p>
-                            <h6>Feels Like Temperature</h6>
-                            <p>Taking into account wind speed, humidity, air pressure and other factors, how warm it would feel to the average person</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+    <!--2nd Modal: Attire-->
+                    <button class="btn btn-info" data-toggle="modal" data-target="#tempModal">Temperature</button>
+                    <div class="modal fade" id="tempModal" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Temperature Explanations</h5>
+                                    <button type="button" class="close btn-dark" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Low Temperature</h6>
+                                    <p><i class="fas fa-temperature-low fa-3x"></i>A temperature of below 5°C is expected in your area</p>
+                                    <h6>Moderate Temperature</h6>
+                                    <p><i class="fas fa-thermometer-half fa-3x"></i>A temperature of between 5°C  and 20°C is expected in your area</p>
+                                    <h6>High Temperature</h6>
+                                    <p><i class="fas fa-temperature-high fa-3x"></i>A temperature of above 20°C is expected in your area</p>
+                                    <h6>Feels Like Temperature</h6>
+                                    <p>Taking into account wind speed, humidity, air pressure and other factors, how warm it would feel to the average person</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
