@@ -124,6 +124,9 @@ To display accurate weather information on the webpage when a user enters their 
  * Search Bar
  * Weather Display using Open Weather Map API
  * Weather Guidance Icons
+ * Icon & Weather Description Modals
+ * Change Temperature Metric Display
+
 
 #### Future Development:
  * Multiple location display
