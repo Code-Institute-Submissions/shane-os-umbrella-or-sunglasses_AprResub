@@ -57,6 +57,7 @@ searchweather {
     border-radius: 10px;
     text-align: center;
     outline: none;
+    width: 80%;
 }
 
 .searchicon {
