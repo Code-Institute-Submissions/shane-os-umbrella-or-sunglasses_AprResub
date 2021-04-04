@@ -64,8 +64,8 @@ function locationErrorCheck(city){
 function displayData(data) {
     citynameRef.innerHTML = data.name;
     countrynameRef.innerHTML = data.sys.country;
-    datetime = Date(data.dt);
-    datetimeRef.innerHTML = datetime;
+    // datetime = Date(data.dt);
+    // datetimeRef.innerHTML = datetime;
     citydescriptionRef.innerHTML = data.weather[0].description;
     weatherconditionsiconRef.innerHTML = "<img src="+"http://openweathermap.org/img/wn/"+data.weather[0].icon+".png>";
     windspeedhour = parseFloat(data.wind.speed)*((60*60)/1000);
