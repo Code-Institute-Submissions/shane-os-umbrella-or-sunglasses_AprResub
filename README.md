@@ -169,11 +169,13 @@ A variety of named locations were entered into the search bar to make sure that 
 
 ## Resolution of Bugs:
 
-The main issues encountered when creating this website were with regards to the use of the fetch utility in javascript, the conditional displaying of images, text and icons.
+The main issues encountered when creating this website were with regards to the use of the fetch utility in javascript, the conditional displaying of images, text and icons javascript, the conditional displaying of images, text and icons and finally converting the temperature displayed, e.g. from celcius to fahrenheit, depending on the option chosen by the user.
 
 Initially I found the fetch function in javascript to be quite difficult to use. At the beginning when I was able to retrieve the JSON data I had trouble obtaining the exact weather data that I required. The data was show as "undefined" when shown in a browser. I overcame this confusion through the use of online materials such as the [javascript.info website](https://javascript.info/fetch) and the [w3 schools](https://www.w3schools.com/js/js_api_fetch.asp) orrganisation programming resources. 
 
 When I used if statements inside functions and returned values to other functions and elements, I encountered some difficulty as often the incorrect icon or image would appear. The icons and images that appear are based on the weather data retrieved from the Open Weather Map API. I noticed that the mistake was occurring due to the lack of an extra equals sign in one part and the incorrect statements used for if statments in some function. Once these issues were resolved, the images and icons showed as expected.
+
+Problems were encountered when creating the function required to confirm the user's choice of temperature measurement and display the comparable temperature value. These issues were in relation to allowing the function to be run repeatedly without mistakes. To resolve this problem, I created lists for the actual temperature and "feels like" temperature value that contained the calculated celcius, fahrenheit and kelvin. These stored values would a allow a simple function to check the current selected value of the temperature measurements options and display the correct index item of the sotred values list.
 
 ## Deployment:
 The Umbrella or Sunglasses website is stored as a repository on the Github site. The website was created using the Gitpod Integrated Development Environment. Utilising the Github Pages feature, the Umbrella or Sunglasses website was deployed. The process for deploying the site on Github pages was as follows:
