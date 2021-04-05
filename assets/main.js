@@ -22,13 +22,13 @@ const mainbackgroundRef = document.querySelector('#weatherphoto');
 // Location Search Bar Listener
 search.addEventListener("click", function(){
     let city = document.getElementById('searchweather').value;
-    validitycheck = locationErrorCheck(city)
+    validitycheck = locationErrorCheck(city);
     if (validitycheck == "Proceed") {
         citydata = `${website}${city}&appid=${appid}`;
         getData(citydata);
     }
     else {
-        invalidLocation(validitycheck)
+        invalidLocation(validitycheck);
     }
 });
 
@@ -171,7 +171,7 @@ function metricvalue(){
     for(i = 0; i < chosen.length; i++) {
         if(chosen[i].checked)
         tempmetric = i;
-    };
+    }
     if (tempmetric == 0) {
         citytempRef.innerHTML = realtemprecords[0];
         temperaturefeelsRef.innerHTML = "Reel Temperature Feels Like: " + feelstemprecords[0];
