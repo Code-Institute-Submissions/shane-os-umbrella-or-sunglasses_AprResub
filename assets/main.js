@@ -11,7 +11,6 @@ const hightemperature = 20;
 const strongwinds = 20;
 
 const citynameRef = document.querySelector('#cityname');
-const datetimeRef = document.querySelector('#datetime');
 const citydescriptionRef = document.querySelector('#citydescription');
 const citytempRef = document.querySelector('#citytemp');
 const citywindRef = document.querySelector('#citywind');
