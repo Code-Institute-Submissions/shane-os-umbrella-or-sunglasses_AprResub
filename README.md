@@ -205,7 +205,8 @@ Alternatively, the Umbrella or Sunglasses project can be run locally:
 * HTML/CSS/Javascript Code:
 1. Cards: Some code was taken from the [bootstrap website](https://getbootstrap.com/docs/4.0/components/card/) to allow text to overlay images.
 2. Jumbotron: Similar to the above, some of the code used was inspired from the [bootstrap website](https://getbootstrap.com/docs/4.0/components/jumbotron/)
-3. As mentioned previously, code from the [javascript.info website](https://javascript.info/fetch) and the [w3 schools](https://www.w3schools.com/js/js_api_fetch.asp) orrganisation. 
+3. As mentioned previously, code from the [javascript.info website](https://javascript.info/fetch) and the [w3 schools](https://www.w3schools.com/js/js_api_fetch.asp) orrganisation.
+4. Some code used for the popup alert in the event of an incorrect city name/ no city name being submitted, was obtained from [SweetAlert2](https://sweetalert2.github.io/).
 
 * Weather Data:
 1. The Current Weather API is operated by [Open Weather Map](https://openweathermap.org/current)
