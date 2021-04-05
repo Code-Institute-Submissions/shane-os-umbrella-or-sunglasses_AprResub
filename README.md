@@ -3,31 +3,40 @@
 ![Sunset Landscape](https://github.com/shane-os/umbrella-or-sunglasses/blob/master/assets/images/sunset-landscape.jpg)
 
 ## Contents
-### [UX (User Experience)](#ux-user-experience)
+[UX (User Experience)](#ux-user-experience)
  * [Project Goals](#project-goals)
  * [User Goals](#user-goals)
  * [User Stories](#user-stories)
  * [Site Owner Goals](#site-owner-goals)
  * [User Requirements](#user-requirements)
  * [User Expectations](#user-expectations)
-### [Site Layout and Design](#site-layout-and-design)
+
+[Site Layout and Design](#site-layout-and-design)
   * [Wireframes](#wireframes)
   * [Icons](#icons)
   * [Images](#images)
   * [Colour Scheme](#colour-scheme)
-### [Technologies](#technologies)
+
+[Technologies](#technologies)
   * [Programming Languages](#programming-languages)
   * [Libraries and Tools](#libraries-and-tools)
-### [Open Weather Map API](#open-weather-map-api)
+
+[Open Weather Map API](#open-weather-map-api)
   * [Fetch](#fetch) 
-### [Features](#features)
+
+[Features](#features)
   * [Developed](#developed)
   * [Future Implementation](#future-implementation)
-### [Testing](#testing)
-### [Bugs](#bugs)
-### [Deployment](#deployment)
-### [Accreditation and Gratitude](#accreditation-and-gratitude)
-### [References](#references)
+
+[Testing](#testing)
+
+[Resolution of Bugs](#resolution-of-bugs)
+
+[Deployment](#deployment)
+
+[Accreditation and Gratitude](#accreditation-and-gratitude)
+
+[References](#references)
 
 ## UX (User Experience):
 #### Project Goals:
