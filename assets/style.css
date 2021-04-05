@@ -82,7 +82,7 @@ searchweather {
 }
 
 .card-header {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
     background: none;
     border: none;
@@ -93,8 +93,9 @@ searchweather {
     border-radius: 15px;
     background-size: cover;
     background-position: center;
-    filter: brightness(90%);
+    filter: brightness(80%);
     filter: drop-shadow(4px 0px 5px gray);
+    object-fit: cover;
 }
 
 #citytemp {
@@ -165,7 +166,7 @@ footer p {
         font-size: 36px;
     }
     #citytemp {
-        font-size: 80px;
+        font-size: 60px;
     }
     #weatherconditionsicon {
         font-size: 32px;
@@ -187,6 +188,6 @@ footer p {
         font-size: 60px;
     }
     #citytemp {
-        font-size: 120px;
+        font-size: 100px;
     }
 }
