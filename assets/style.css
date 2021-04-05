@@ -97,6 +97,8 @@ searchweather {
     object-fit: cover;
 }
 
+/* Weather Information Display */
+
 #citytemp {
     font-size: 40px;
     font-weight: 600;
