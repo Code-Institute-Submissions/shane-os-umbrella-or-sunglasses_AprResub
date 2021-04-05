@@ -78,7 +78,6 @@ searchweather {
     outline: none;
     border: none;
     width: 80%;
-    display: flexbox;
 }
 
 .card-header {
