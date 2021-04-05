@@ -29,6 +29,10 @@
   * [Future Implementation](#future-implementation)
 
 [Testing](#testing)
+ * [Navigation Bar](#navigation-bar)
+ * [Temperature Measurements](#temperature-measurements)
+ * [Search Bar](#search-bar)
+ * [Code Validators](#code-validators)
 
 [Resolution of Bugs](#resolution-of-bugs)
 
@@ -140,7 +144,6 @@ The fetch utility within javascript was used to get the location entered into th
  * Icon & Weather Description Modals
  * Change Temperature Metric Display
 
-
 #### Future Implementation:
  * Multiple location display
  * Weather maps
@@ -148,12 +151,16 @@ The fetch utility within javascript was used to get the location entered into th
 
 ## Testing:
 
-#### Internal Navigation:
+#### Navigation Bar:
 Each navigation option was testing to make sure that the user was taken to the correct place on the website.
 
-#### Search Bar Inputs:
-A variety of named locations were entered into the search bar to make sure that the data retrieved was correct. This task was completed by comparing data received for a city with the data disaplyed when the city's current weather conditions are searched for on the Open Weather Map website. Random letters, numbers, etc. were entered into the searchbar to make sure that the incorrect location name function was activated. This notification would inform the user that they have misspelt their chosen location.
+#### Temperature Measurements:
+As the site allows users to to view the temperature displayed in their prefered measurement, (celcius, fahrenheit or kelvin) it is important to check the accuracy of these conversions. The default temperature measurement option that appears when the user searches for the weather conditions of a city is celcius. For a variety of cities the function was run following the same steps as the user. The temperatures displayed as a result of the calculations were checked to ensure they were accurate.
 
+#### Search Bar:
+A variety of named locations were entered into the search bar to make sure that the data retrieved was correct. This task was completed by comparing data received for a city with the data displayed when the city's current weather conditions are searched for on the Open Weather Map website. Random letters, numbers, etc. were entered into the searchbar to make sure that the incorrect location name function was activated. This notification would inform the user that they have misspelt their chosen location. Empty/ Null submissions in the searchbar returned the expected result of an alert appearing informing the user that their searbar submission is invalid. 
+
+#### Code Validators:
 * The HTML code was passed through the W3C Validator. The errors that arose were in relation to the image and h3 elements. As the src attribtue are comppleted using IDs and Javascript no change would be required. A similar situation arises with the h3 element as its entry is decided by the javascript code.
 
 * The CSS code was passed through the Jigsaw validator and the single typo found was corrected.
@@ -162,7 +169,7 @@ A variety of named locations were entered into the search bar to make sure that 
 
 ## Resolution of Bugs:
 
-The main issues encountered when creating this website were with regards to the use of the fetch utility in javascript and the conditional displaying of images, text and icons.
+The main issues encountered when creating this website were with regards to the use of the fetch utility in javascript, the conditional displaying of images, text and icons.
 
 Initially I found the fetch function in javascript to be quite difficult to use. At the beginning when I was able to retrieve the JSON data I had trouble obtaining the exact weather data that I required. The data was show as "undefined" when shown in a browser. I overcame this confusion through the use of online materials such as the [javascript.info website](https://javascript.info/fetch) and the [w3 schools](https://www.w3schools.com/js/js_api_fetch.asp) orrganisation programming resources. 
 
