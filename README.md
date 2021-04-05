@@ -40,7 +40,7 @@
 
 ## UX (User Experience):
 #### Project Goals:
- * The purpose of this project is to create a website providing users with weather related information on their desired geographical location.
+ * The purpose of this project is to create a website providing users with weather related information on their chosen city.
  * Various infographics and other content mediums will be available on the site to engage users and represent data in a meaningful manner that is applicable to their daily lives.
 
 #### User Goals:
@@ -61,14 +61,16 @@
 #### User Requirements:
  * Area search function operates correctly and promptly.
  * Up to date and accurate weather condition information is provided.
+ * The weather condition information presented is easy to understand.
  * Site is easy to navigate.
 
 #### User Expectations:
  * Information related to weather conditions is displayed in a visually appealing manner.
  * Data presented is clear and concise thus reducing potential for confusion.
  * Site internal links direct users to the expected destination link.
+ * Celcius, Fahrenheit and Kelvin temperature conversions are reliable. 
 
-![Am I Responsive Image](https://github.com/shane-os/umbrella-or-sunglasses/blob/master/assets/images/amiresponsive-umbrella-or-sunglasses.PNG)
+![Am I Responsive Image](https://github.com/shane-os/umbrella-or-sunglasses/blob/master/assets/images/umbrella-or-sunglasses-amiresponsive.PNG)
 ## Site Layout and Design
 
 Taking into account the expected user requirements for this website, I decided at the beginning that a single page scrollable website would be more appropriate than a multi-page concept. This is to keep the website easier to navigate and more focused on its purpose: To provide users with accurate information on weather conditions in their chosen area in an efficient and appealling medium. 
